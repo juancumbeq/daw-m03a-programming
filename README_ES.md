@@ -38,31 +38,150 @@ Veremos los dos tipos de programación: estructurada y modular, analizando las l
 
 <a name="uf1"></a>
 
+<hr>
+
 ## UF1: Programación estructurada
 
 - Reconocer la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.
 - Utilizar correctamente tipos de datos simples y compuestos utilizando las estructuras de control adecuadas.
 
-PACs:
-- Introducción a la programación 
-- Variables, literales y constantes
-- Operadores y conversiones
-- Diseño de algoritmos
-- Tipos de datos simples y compuestos
-- Estructuras de repetición y salto (I)
-- Estructuras de repetición y salto (II)
-- Depuración de errores
+
+### Variables en C#. Operaciones con variables.
+
+Una variable es una estructura de datos que ocupa un espacio en memoria y puede variar a lo largo de un programa.
+
+- Variables Globales: declaradas fuera de la función. Ámbito de existencia de todo el programa.
+- Variables Locales: declaradas dentro de la función. Ámbito de exsitencia de la propia función pero no fuera de ella.
+
+```
+class Program
+{
+  GLOBALES
+  const int num = 1;
+  int numero2 = 8;
+
+  static void Main(string[] args)
+  {
+    LOCALES
+    int numero = 10;
+    Double num2 = 3.4;
+    char letra = 'a';
+    string cadena = "Esto es una cadena";
+  }
+}
+```
+
+#### Variables numéricas
+- int: entero con signo = 32 bits (-2K mill a 2K mill)
+- long: entero con signo = 64 bits (-9K trill a 9K trill)
+- short: entero con signo = 16 bits (-32K a 32K)
+- float: punto flotante (decimales) = 4B (hasta 7 decimales)
+- double: punto flotante (decimales) = 8B (hasta 14 decimales)
+- long: decimal de alta precisión = 16B (hasta 29 decimales)
+
+#### Operaciones
+int suma = num1 + num2;
+int resta =  num1 + num2;
+int multiplicación = num1 * num2;
+float division = num1 / num2;
+int modulo = num1 % num2;
 
 
-- Programación modular
-- Diseño descendente
-- Diseño de funciones
-- Recursividad
-- Librerías
+#### Casos Especiales
+Incrementar en 1: num++;
+Decrementar en 1: num--:
+Operar y actualizar variable: 
+num3 += 5;
+num4 *=6;
+
+#### Variables textuales
+String: cadena de caracteres = tamaño ilimitado
+char: un solo carácter = 1 Byte (1 carácter de texto)
+
+#### Operaciones con String
+- Length(): obtiene el número de caracteres del string correspondiente.
+- Trim(): quita todos los caracteres de espacio en blanco del principio y el final de la cadena actual.
+- Contains(): devuelve el valor que indica si una cadena especificada aparece dentro de otra cadena.
+- Substring(): recupera una subcadena de la instancia.
+- ToLower(): devuelve una copia de la cadena convertidda en minúsculas.
+- ToUpper(): devuelve una copia de la cadena convertida en un mayúsculas.
+
+#### Uso [ver archivo](www.github)
+
+```
+using System;
+
+namespace dawm03a_programming
+{
+    class StringOperations
+    {
+        static void Main(string[] args)
+        {
+            String nombre = "Programación";
+            Console.WriteLine(nombre.Trim());
+            Console.WriteLine("La longitud es de " + nombre.Length);
+            Console.WriteLine(nombre.ToUpper());
+            Console.WriteLine(nombre.Substring(2, 4));
+            if (nombre.Contains("ogra"))
+            {
+                Console.WriteLine("true");
+            };
+        }
+    }
+}
+
+OUTPUT:
+La longitud es de 12
+PROGRAMACIÓN
+ogra
+true
+```
+
+#### Caracteres especiales
+- Comilla simple: \'
+- Comilla doble: \"
+- Comilla nulo: \0
+- Retroceso: \b
+- Salto de página: \f
+- Nueva línea: \n
+- Retorno de carro: \r
+- Tabulación horizontal: \t
+- Tabulación vertical: \v
 
 
-- Ficheros
-- Operaciones sobre ficheros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Métodos Básicos
+Clase Console
+- Write()
+- WriteLine()
+- ReadLine()
+- Read()
+- ReadKey()
+
+
+
+### Instrucciones de control condicionales: IF/SWITCH.
+### Instrucciones de control iterativas: WHILE/FOR.
+### Solución al ejercicio opcional anterior.
+### Propuesta de ejercicio opcional.
+
+
+
+
 
 
 <br>
@@ -181,3 +300,34 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 ## Author
 
 This project was implemented by Juan Cumbe. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. 😊
+
+
+
+
+
+
+
+
+
+
+
+PACs:
+- Introducción a la programación 
+- Variables, literales y constantes
+- Operadores y conversiones
+- Diseño de algoritmos
+- Tipos de datos simples y compuestos
+- Estructuras de repetición y salto (I)
+- Estructuras de repetición y salto (II)
+- Depuración de errores
+
+
+- Programación modular
+- Diseño descendente
+- Diseño de funciones
+- Recursividad
+- Librerías
+
+
+- Ficheros
+- Operaciones sobre ficheros
