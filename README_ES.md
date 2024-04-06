@@ -89,7 +89,7 @@ float division = num1 / num2;
 int modulo = num1 % num2;
 
 
-#### Casos Especiales
+#### Casos especiales
 
 Incrementar en 1: num++;
 Decrementar en 1: num--:
@@ -157,6 +157,14 @@ true
 
 <br>
 
+### Variables booleanas
+- > Mayor
+- < Menor
+- >= Mayor o igual
+- <= Menor o igual
+- == Igual
+- != Desigualdad
+- = Asignación
 
 
 
