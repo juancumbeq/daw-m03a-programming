@@ -71,6 +71,8 @@ class Program
 }
 ```
 
+<br>
+
 #### Variables numéricas
 - int: entero con signo = 32 bits (-2K mill a 2K mill)
 - long: entero con signo = 64 bits (-9K trill a 9K trill)
@@ -88,17 +90,22 @@ int modulo = num1 % num2;
 
 
 #### Casos Especiales
+
 Incrementar en 1: num++;
 Decrementar en 1: num--:
 Operar y actualizar variable: 
 num3 += 5;
 num4 *=6;
 
+<br>
+
 #### Variables textuales
+
 String: cadena de caracteres = tamaño ilimitado
 char: un solo carácter = 1 Byte (1 carácter de texto)
 
 #### Operaciones con String
+
 - Length(): obtiene el número de caracteres del string correspondiente.
 - Trim(): quita todos los caracteres de espacio en blanco del principio y el final de la cadena actual.
 - Contains(): devuelve el valor que indica si una cadena especificada aparece dentro de otra cadena.
@@ -148,7 +155,7 @@ true
 - Tabulación horizontal: \t
 - Tabulación vertical: \v
 
-
+<br>
 
 
 
