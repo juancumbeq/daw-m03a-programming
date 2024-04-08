@@ -106,7 +106,7 @@ char: un solo carácter = 1 Byte (1 carácter de texto)
 
 #### Operaciones con String
 
-- Length(): obtiene el número de caracteres del string correspondiente.
+- Length: obtiene el número de caracteres del string correspondiente. Es la única que en C# no lleva "( )".
 - Trim(): quita todos los caracteres de espacio en blanco del principio y el final de la cadena actual.
 - Contains(): devuelve el valor que indica si una cadena especificada aparece dentro de otra cadena.
 - Substring(): recupera una subcadena de la instancia.
@@ -158,19 +158,99 @@ true
 <br>
 
 ### Variables booleanas
-- > Mayor
-- < Menor
-- >= Mayor o igual
-- <= Menor o igual
-- == Igual
-- != Desigualdad
-- = Asignación
+#### Operadores de comparación
+- '>': Mayor
+- '<' Menor
+- '>=' Mayor o igual
+- '<=' Menor o igual
+- '==' Igual
+- '!=' Desigualdad
+- '=' Asignación
+
+#### Operadores booleanos
+- & AND lógico. Evalúa ambos operandos.
+- && AND lógico. Evalúa el operando derecho solo si es necesario.
+- | OR lógico. Evalúa ambos operandos.
+- || OR lógico. Evalúa el operando derecho solo si es necesario.
+- ^ XOR lógico.
+- ! Negación lógica.
+
+&& AND 
+True - True = True
+True - False = False
+False - True = False
+False - False = False
+
+|| OR 
+True - True = True
+True - False = True
+False - True = True
+False - False = False
+
+^ XOR
+True - True = False
+True - False = True
+False - True = True
+False - False = False
 
 
+#### Conversión de variables en C#
+
+ No se pueden realizar operaciones aritméticas con caracteres ni con cadenas de caracteres.
+
+```
+using System;
+
+namespace daw_m03a_programming
+{
+    class Conversions
+    {
+        static void Main(string[] args)
+        {
+            String num1 = "4";
+            String num2 = "2";
+            Console.WriteLine(num1 + num2);
+        }
+    }
+}
+
+OUTPUT:
+42
 
 
+using System;
+
+namespace daw_m03a_programming
+{
+    class Conversions
+    {
+        static void Main(string[] args)
+        {
+            String num1 = "4";
+            int num2 = 2;
+            Console.WriteLine(num1 + num2);
+        }
+    }
+}
 
 
+OUTPUT:
+42
+```
+
+##### Conversiones implícitas
+
+```
+long b = a;
+Console.WriteLine(b);
+```
+##### Conversiones explícitas
+```
+float b = 8/3;
+Console.WriteLine((int)b);
+
+int.Parse("100");
+```
 
 
 
@@ -189,13 +269,86 @@ Clase Console
 
 
 
+
+
+
+
+
+
 ### Instrucciones de control condicionales: IF/SWITCH.
+
+<p align="center">
+  <img src="" alt="if">
+  <img src="" alt="if..else">
+  <img src="" alt="if..else if..else">
+</p>
+
+```
+using System;
+
+namespace daw_m03a_programming
+{
+    class Switch_Case
+    {
+        static void Main(string[] args)
+        {
+            int number = 1;
+            
+            switch(number)
+            {
+                case 1:
+                    Console.WriteLine("Case 1");
+                    break;
+                
+                case 2:
+                    Console.WriteLine("Case 2");
+                    break;
+                
+                default:
+                    Console.WriteLine("Deafult Case");
+                    break;
+            }
+        }
+    }
+}
+
+OUTPUT
+Case 1
+```
+
+
+
 ### Instrucciones de control iterativas: WHILE/FOR.
-### Solución al ejercicio opcional anterior.
-### Propuesta de ejercicio opcional.
+
+<p align="center">
+  <img src="" alt="if">
+  <img src="" alt="if..else">
+  <img src="" alt="if..else if..else">
+</p>
+
+#### Break
+
+La instrucción break finaliza la ejecución del bucle más próximo.
+El control se pasa al instrucción que hay a continuación de la instrucción finalizada, si existe.
+
+#### Continue
+
+La instrucción "continue" transfiere el control a la siguiente iteración de ls instrucción envolvente (while, for...)
 
 
 
+### Diagrama de flujo
+
+<p align="center">
+  <img src="" alt="diagrama de flujo">
+</p>
+
+
+### Pensamiento computacional
+
+<p align="center">
+  <img src="" alt="pensamiento computacional">
+</p>
 
 
 
@@ -256,26 +409,6 @@ This website represents the first versión of my portfolio. As such, I chose not
 Representation of the proyect's file structure:
 
 ```
-juancumbe-site
-├─ LICENSE
-│
-├─ assets
-│  ├─ download
-│  │  └─ JuanCumbe_CV_ENG_NoPhone.pdf
-│  └─ img
-│     ├─ favicon-132x132.png
-│     ├─ favicon-40xx40.png
-│     ├─ juancumbe.png
-│     ├─ taskteam.png
-│     └─ webinar-manager.png
-│
-├─ css
-│  └─ styles.css
-│
-├─ js
-│   └─ scripts.js
-│
-└─ index.html
 
 ```
 
