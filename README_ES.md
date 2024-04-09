@@ -1,8 +1,3 @@
-<p align="right">
-	<a href="README_ES.md">Haga clic aquí para versión en español</a>
-</p>
-
-
 # [M03A: Programación A](https://www.ilerna.es/es/ciclo-grado-superior-desarrollo-aplicaciones-web-72) 🚀
 
 
@@ -27,7 +22,7 @@ Veremos los dos tipos de programación: estructurada y modular, analizando las l
 
 <br>
 
-## Index
+# Index
 
   - [UF1: Programación estructurada](#uf1)
   - [UF2: Diseño modular](#uf2)
@@ -52,6 +47,25 @@ Una variable es una estructura de datos que ocupa un espacio en memoria y puede 
 
 - Variables Globales: declaradas fuera de la función. Ámbito de existencia de todo el programa.
 - Variables Locales: declaradas dentro de la función. Ámbito de exsitencia de la propia función pero no fuera de ella.
+
+
+#### Declaración
+
+int i;
+string cadena;
+double num;
+
+#### Asignación
+
+i = 0;
+cadena = "Hola";
+num = 8/3;
+
+#### Declaración y asignación
+int i = 0;
+string cadena = "Hola";
+double num = 8/3;
+
 
 ```
 class Program
@@ -283,6 +297,38 @@ Clase Console
   <img src="" alt="if..else if..else">
 </p>
 
+
+#### if
+```
+if(i < 2)
+{
+  Console.WriteLine(i);
+}
+```
+
+#### if..else
+```
+if(i < 2)
+{
+  Console.WriteLine(i);
+} else {
+  i++;
+}
+```
+
+#### if..else if..else
+```
+if(i < 2)
+{
+  Console.WriteLine(i);
+} else if(i < 4 ){
+  i++;
+} else {
+  i+=;
+}
+```
+
+#### Switch
 ```
 using System;
 
@@ -321,10 +367,40 @@ Case 1
 ### Instrucciones de control iterativas: WHILE/FOR.
 
 <p align="center">
-  <img src="" alt="if">
-  <img src="" alt="if..else">
-  <img src="" alt="if..else if..else">
+  <img src="" alt="while">
+  <img src="" alt="do..while">
+  <img src="" alt="for">
 </p>
+
+
+#### while
+```
+for (int i = 0; i < 3; i++)
+{
+  Console.WriteLine(i);
+  // Las llaves se pueden omitir cuando solo hay una única instrucción.
+}
+```
+
+#### do..while
+```
+int i = 0;
+while (i < 3) {
+  Console.WriteLine(i);
+  i++;
+}
+```
+
+#### for
+```
+int i = 0;
+do {
+  Console.WriteLine(i);
+  i++;
+} while (i < 3);
+```
+
+
 
 #### Break
 
@@ -339,6 +415,18 @@ La instrucción "continue" transfiere el control a la siguiente iteración de ls
 
 ### Diagrama de flujo
 
+Un diagrama de flujo es una representación gráfica de los pasos lógicos y secuenciales que sigue un proceso o algoritmo. En programación, un diagrama de flujo es una herramienta visual utilizada para planificar, comprender y comunicar la lógica de un programa o algoritmo antes de comenzar a escribir el código.
+
+En un diagrama de flujo, los pasos se representan mediante símbolos gráficos que están interconectados por flechas que indican la dirección del flujo de ejecución. Algunos de los símbolos más comunes en un diagrama de flujo son:
+
+- Inicio/Fin: Representado por un óvalo, indica el punto de inicio o finalización del proceso.
+- Proceso: Representado por un rectángulo, indica una acción o conjunto de acciones que se deben realizar.
+- Decisión: Representado por un rombo, indica un punto en el flujo donde se toma una decisión basada en una condición.
+- Conector: Representado por un círculo, se utiliza para conectar diferentes partes del diagrama de flujo.
+- Entrada/Salida: Representado por un paralelogramo, indica la entrada o salida de datos del proceso.
+
+El objetivo de un diagrama de flujo en programación es proporcionar una representación visual clara y concisa del algoritmo o proceso, lo que facilita su comprensión, análisis y depuración. Es una herramienta útil tanto para programadores que están diseñando un algoritmo como para aquellos que necesitan entender el funcionamiento de un código existente.
+
 <p align="center">
   <img src="" alt="diagrama de flujo">
 </p>
@@ -346,9 +434,68 @@ La instrucción "continue" transfiere el control a la siguiente iteración de ls
 
 ### Pensamiento computacional
 
+El pensamiento computacional es un enfoque para resolver problemas y diseñar sistemas que se basa en conceptos fundamentales de la informática. Implica descomponer problemas complejos en partes más simples, identificar patrones y abstracciones, y diseñar algoritmos eficientes para resolverlos.
+
+En programación, el pensamiento computacional implica pensar de manera estructurada y lógica, dividiendo un problema en pasos lógicos y secuenciales que pueden ser traducidos a un código informático. Esto incluye habilidades como la identificación de patrones repetitivos, la creación de algoritmos para automatizar tareas y la capacidad de resolver problemas de manera eficiente utilizando recursos computacionales.
+
+El pensamiento computacional no se limita solo a programadores; es una habilidad cognitiva fundamental que puede ser útil en una amplia variedad de campos, desde la resolución de problemas matemáticos hasta la toma de decisiones en negocios y ciencia. En resumen, el pensamiento computacional es una forma de pensar críticamente y resolver problemas utilizando los principios de la informática y la programación.
+
 <p align="center">
   <img src="" alt="pensamiento computacional">
 </p>
+
+
+## C#: Tratamientos de cadenas
+
+#### Entrada
+
+Las instrucciones de entrada son las que aportan datos a nuestro programa. A lo largo del módulo vamos a ver dos formar de hacerlo: mediante el teclado y mediante ficheros (UF3).
+
+En cuanto a la entrada por teclado, utilizaremos el método "Console.ReadLine()". Es un método sin parámetros (paréntesis vacíos) que devuelve lo que se introduzca por teclado. Puede guardarse en un variable, utilizarse como valor en un condicional, constituir el parámetro de otra función, etc.
+
+Ejemplos de uso:
+```
+String entrada = Console.ReadLine();
+if(Console.ReadLine() == "SI);
+Console.WriteLine("Lo escrito es {0}", Console.ReadLine());
+int divisor = int.Parse(Console.ReadLine())
+```
+
+Existen otras instrucciones de entrada por teclado: "Console.ReadKey()" lee una pulsación, mientras "Console.Read()" devuelve el código ASCII del primer carácter de la frase que se introduzca por teclado, aunque espera a la pulsación del ENTER para reaccionar. Ninguno de los dos métodos lo utilizaremos en el módulo.
+
+
+
+#### Salida
+
+Las instrucciones de salida son las que muestran datos desde nuestro programa. A lo largo del módulo vamos a ver dos formas de hacerlo: mediante la impresión por pantalla y mediante ficheros (UF3).
+
+En cuanto a la salida por pantalla, utilizaremos los métodos "Console.Write()" y "Console.WriteLine()". Son métodos que necesitan un parámetro para funcionar correctamente: el texto a mostrar. Este texto puede ser un literal, puede contenerse en una variable, ser el resultado de una operación matemática o lógica, o el resultado de la ejecución de otra función, etc.
+
+Ejemplos de uso:
+```
+Console.WriteLine(entrada);
+Console.WriteLine("SI");
+Console.WriteLine("Lo escrito es {0}", Console.ReadLine());
+Console.WriteLine("3 más 2 es {0}", 3+2);
+```
+
+La diferencia entre ambas es que "Console.WriteLine()" finaliza con un salto de línea (lo siguiente que se muestre se hará en una nueva línea) mientras que "Console.Write()" termina con el cursor en el siguiente carácter, es decir, no pasa la siguiente línea y lo siguiente que se muestra se hará a continuación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
