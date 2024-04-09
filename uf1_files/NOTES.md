@@ -1,25 +1,5 @@
-# [M03A: Programación A](https://www.ilerna.es/es/ciclo-grado-superior-desarrollo-aplicaciones-web-72) 🚀
-
-
-El objetivo general de este módulo consiste en aprender los fundamentos de la programación y las diferentes estructuras de control que están al alcance de los programadores tales como variables, bucles, condicionales o arrays. También nos centraremos en la estructuración y reutilización del código a través de la creación y el uso de métodos, y se tratará la persistencia a través del trabajo con ficheros.
-
-La programación incluye aspectos tales como:
-- Reconocer la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación usado.
-- Utilizar correctamente tipos de datos simples y compuestos utilizando las estructuras de control adecuadas.
-- Escribe y prueba programas sencillos reconociendo y aplicando los fundamentos de la programación modular.
-- Diseña, prueba y documenta programas que realizan diferentes operaciones sobre ficheros, documentando el programa y las pruebas realizadas.
-
-
-En este módulo, de 3 Unidades Formativas, enseñaremos cómo empezar a programar, viendo la estructura de un bloque, uso de variables y tipos y los operadores del lenguaje de programación.
-
-Veremos los dos tipos de programación: estructurada y modular, analizando las llamadas a funciones y métodos y recursividad. Trabajaremos con ficheros y haremos operaciones con ellos.
-
+## UF1: PROGRAMACIÓN ESTRUCTURADA
 <br>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Project%20En-Progreso-yellow"/>
-</p>
-
 <br>
 
 # Index
@@ -29,54 +9,34 @@ Veremos los dos tipos de programación: estructurada y modular, analizando las l
   - [UF3: Fundamentos de gestión de ficheros](#uf3)
 
 <br>
+<br>
 
 
-<a name="uf1"></a>
-
-<hr>
-
-## UF1: Programación estructurada
+## Objetivos
 
 - Reconocer la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.
 - Utilizar correctamente tipos de datos simples y compuestos utilizando las estructuras de control adecuadas.
 
+<br>
+<br>
 
-### Variables en C#. Operaciones con variables.
+## Variables en C#. Operaciones con variables.
 
 Una variable es una estructura de datos que ocupa un espacio en memoria y puede variar a lo largo de un programa.
 
-- Variables Globales: declaradas fuera de la función. Ámbito de existencia de todo el programa.
-- Variables Locales: declaradas dentro de la función. Ámbito de exsitencia de la propia función pero no fuera de ella.
-
-
-#### Declaración
-
-int i;
-string cadena;
-double num;
-
-#### Asignación
-
-i = 0;
-cadena = "Hola";
-num = 8/3;
-
-#### Declaración y asignación
-int i = 0;
-string cadena = "Hola";
-double num = 8/3;
-
+- **Variables Globales**: declaradas fuera de la función. Ámbito de existencia de todo el programa.
+- **Variables Locales**: declaradas dentro de la función. Ámbito de exsitencia de la propia función pero no fuera de ella.
 
 ```
 class Program
 {
-  GLOBALES
+  // VARIABLES GLOBALES
   const int num = 1;
   int numero2 = 8;
 
   static void Main(string[] args)
   {
-    LOCALES
+    // VARIABLES LOCALES
     int numero = 10;
     Double num2 = 3.4;
     char letra = 'a';
@@ -85,50 +45,75 @@ class Program
 }
 ```
 
+#### Declaración:
+```
+int i;
+string cadena;
+double num;
+```
+
+#### Asignación:
+```
+i = 0;
+cadena = "Hola";
+num = 8/3;
+```
+
+#### Declaración y asignación:
+```
+int i = 0;
+string cadena = "Hola";
+double num = 8/3;
+```
+
+<br>
 <br>
 
-#### Variables numéricas
-- int: entero con signo = 32 bits (-2K mill a 2K mill)
-- long: entero con signo = 64 bits (-9K trill a 9K trill)
-- short: entero con signo = 16 bits (-32K a 32K)
-- float: punto flotante (decimales) = 4B (hasta 7 decimales)
-- double: punto flotante (decimales) = 8B (hasta 14 decimales)
-- long: decimal de alta precisión = 16B (hasta 29 decimales)
+## Variables numéricas
 
-#### Operaciones
+- **int**: entero con signo = **32 bits** (-2K mill a 2K mill)
+- **long**: entero con signo = **64 bits** (-9K trill a 9K trill)
+- **short**: entero con signo = **16 bits** (-32K a 32K)
+- **float**: punto flotante (decimales) = **4B** (hasta 7 decimales)
+- **double**: punto flotante (decimales) = **8B** (hasta 14 decimales)
+- **long**: decimal de alta precisión = **16B** (hasta 29 decimales)
+
+#### Tipos de operaciones:
+```
 int suma = num1 + num2;
 int resta =  num1 + num2;
 int multiplicación = num1 * num2;
 float division = num1 / num2;
 int modulo = num1 % num2;
+```
 
-
-#### Casos especiales
-
+#### Casos especiales:
+```
 Incrementar en 1: num++;
 Decrementar en 1: num--:
 Operar y actualizar variable: 
 num3 += 5;
 num4 *=6;
+```
 
 <br>
+<br>
 
-#### Variables textuales
+## Variables textuales
 
-String: cadena de caracteres = tamaño ilimitado
-char: un solo carácter = 1 Byte (1 carácter de texto)
+- **String**: cadena de caracteres = **tamaño ilimitado**
+- **char**: un solo carácter = **1 Byte** (1 carácter de texto)
 
-#### Operaciones con String
+#### Operaciones con String:
 
-- Length: obtiene el número de caracteres del string correspondiente. Es la única que en C# no lleva "( )".
-- Trim(): quita todos los caracteres de espacio en blanco del principio y el final de la cadena actual.
-- Contains(): devuelve el valor que indica si una cadena especificada aparece dentro de otra cadena.
-- Substring(): recupera una subcadena de la instancia.
-- ToLower(): devuelve una copia de la cadena convertidda en minúsculas.
-- ToUpper(): devuelve una copia de la cadena convertida en un mayúsculas.
+- **Length**: obtiene el número de caracteres del string correspondiente. Es la única que en C# no lleva "( )".
+- **Trim()**: quita todos los caracteres de espacio en blanco del principio y el final de la cadena actual.
+- **Contains()**: devuelve el valor que indica si una cadena especificada aparece dentro de otra cadena.
+- **Substring()**: recupera una subcadena de la instancia.
+- **ToLower()**: devuelve una copia de la cadena convertidda en minúsculas.
+- **ToUpper()**: devuelve una copia de la cadena convertida en un mayúsculas.
 
-#### Uso [ver archivo](www.github)
-
+#### Uso: [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1_files/c%23%20files/01_StringOperations.cs)
 ```
 using System;
 
@@ -151,11 +136,11 @@ namespace dawm03a_programming
     }
 }
 
-OUTPUT:
-La longitud es de 12
-PROGRAMACIÓN
-ogra
-true
+// OUTPUT:
+// La longitud es de 12
+// PROGRAMACIÓN
+// ogra
+// true
 ```
 
 #### Caracteres especiales
