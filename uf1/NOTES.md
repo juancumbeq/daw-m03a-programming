@@ -113,7 +113,7 @@ num4 *=6;
 - **ToLower()**: devuelve una copia de la cadena convertidda en minúsculas.
 - **ToUpper()**: devuelve una copia de la cadena convertida en un mayúsculas.
 
-#### Uso: [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1_files/c%23%20files/01_StringOperations.cs)
+#### Uso:
 ```
 using System;
 
@@ -142,8 +142,10 @@ namespace dawm03a_programming
 // ogra
 // true
 ```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_StringOperations.cs)
+<br>
 
-#### Caracteres especiales
+#### Caracteres especiales:
 - Comilla simple: \'
 - Comilla doble: \"
 - Comilla nulo: \0
@@ -155,45 +157,55 @@ namespace dawm03a_programming
 - Tabulación vertical: \v
 
 <br>
+<br>
 
-### Variables booleanas
-#### Operadores de comparación
-- '>': Mayor
-- '<' Menor
-- '>=' Mayor o igual
-- '<=' Menor o igual
-- '==' Igual
-- '!=' Desigualdad
-- '=' Asignación
+## Variables booleanas
 
-#### Operadores booleanos
-- & AND lógico. Evalúa ambos operandos.
-- && AND lógico. Evalúa el operando derecho solo si es necesario.
-- | OR lógico. Evalúa ambos operandos.
-- || OR lógico. Evalúa el operando derecho solo si es necesario.
-- ^ XOR lógico.
-- ! Negación lógica.
+#### Operadores de comparación:
+- **'>'**: Mayor
+- **'<'** Menor
+- **'>='** Mayor o igual
+- **'<='** Menor o igual
+- **'=='** Igual
+- **'!='** Desigualdad
+- **'='** Asignación
 
-&& AND 
+#### Operadores booleanos:
+- **& - AND lógico**. Evalúa ambos operandos.
+- **&& - AND lógico**. Evalúa el operando derecho solo si es necesario.
+- **| - OR lógico**. Evalúa ambos operandos.
+- **|| - OR lógico**. Evalúa el operando derecho solo si es necesario.
+- **^ - XOR lógico**.
+- **! - Negación lógica**.
+
+#### Funcionamiento:
+**&& AND**
+```
 True - True = True
 True - False = False
 False - True = False
 False - False = False
-
-|| OR 
+```
+**|| OR**
+```
 True - True = True
 True - False = True
 False - True = True
 False - False = False
+```
 
-^ XOR
+**^ XOR**
+```
 True - True = False
 True - False = True
 False - True = True
 False - False = False
+```
 
+<br>
+<br>
 
-#### Conversión de variables en C#
+## Conversión de variables en C#
 
  No se pueden realizar operaciones aritméticas con caracteres ni con cadenas de caracteres.
 
@@ -202,7 +214,7 @@ using System;
 
 namespace daw_m03a_programming
 {
-    class Conversions
+    class Conversions1
     {
         static void Main(string[] args)
         {
@@ -213,15 +225,16 @@ namespace daw_m03a_programming
     }
 }
 
-OUTPUT:
-42
-
-
+// OUTPUT:
+// 42
+```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/02_Conversions1.cs)
+```
 using System;
 
 namespace daw_m03a_programming
 {
-    class Conversions
+    class Conversions2
     {
         static void Main(string[] args)
         {
@@ -233,9 +246,10 @@ namespace daw_m03a_programming
 }
 
 
-OUTPUT:
-42
+// OUTPUT:
+// 42
 ```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/03_Conversions2.cs)
 
 ##### Conversiones implícitas
 

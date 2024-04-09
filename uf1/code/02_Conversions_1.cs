@@ -2,7 +2,7 @@ using System;
 
 namespace daw_m03a_programming
 {
-    class Conversions
+    class Conversions1
     {
         static void Main(string[] args)
         {
