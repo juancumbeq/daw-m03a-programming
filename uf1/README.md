@@ -472,11 +472,30 @@ Console.WriteLine("3 más 2 es {0}", 3+2);
 
 La diferencia entre ambas es que **"Console.WriteLine()"** finaliza con un salto de línea (lo siguiente que se muestre se hará en una nueva línea) mientras que **"Console.Write()"** termina con el cursor en el siguiente carácter, es decir, no pasa la siguiente línea y lo siguiente que se muestra se hará a continuación.
 
+<br>
+<br>
 
+## Extras Videotutorías
 
+#### Declaración e inicialización múltiple:
 
+```
+int num1 = 5, num2 = 8;
+```
 
+#### Main(string[] args):
+Recoge argumentos de línea de comandos.
 
+#### TryParse():
+Devuelve tre o false en caso de que sea o no posible la transformación.
+
+#### return VS break VS continue:
+
+- return(num): devuelve el valor entre paréntesis. Siempre debe se accesible en una función.
+
+- break: finaliza la ejecución del bucle.
+
+- continue: finaliza la ejecución de la iteración y continúa con la siguiente del bucle.
 
 
 
