@@ -419,6 +419,7 @@ El objetivo de un diagrama de flujo en programación es proporcionar una represe
   <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/DiagramaDeFlujo.png?raw=true" width= "50%" alt="if..else if..else">
 </p>
 
+<br>
 
 ### Pensamiento computacional
 
@@ -432,6 +433,8 @@ El pensamiento computacional no se limita solo a programadores; es una habilidad
   <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/PensamientoComputacional.png?raw=true" width= "50%" alt="if..else if..else">
 </p>
 
+<br>
+<br>
 
 ## C#: Tratamientos de cadenas
 
@@ -439,7 +442,7 @@ El pensamiento computacional no se limita solo a programadores; es una habilidad
 
 Las instrucciones de entrada son las que aportan datos a nuestro programa. A lo largo del módulo vamos a ver dos formar de hacerlo: mediante el teclado y mediante ficheros (UF3).
 
-En cuanto a la entrada por teclado, utilizaremos el método "Console.ReadLine()". Es un método sin parámetros (paréntesis vacíos) que devuelve lo que se introduzca por teclado. Puede guardarse en un variable, utilizarse como valor en un condicional, constituir el parámetro de otra función, etc.
+En cuanto a la entrada por teclado, utilizaremos el método **"Console.ReadLine()"**. Es un método sin parámetros (paréntesis vacíos) que devuelve lo que se introduzca por teclado. Puede guardarse en un variable, utilizarse como valor en un condicional, constituir el parámetro de otra función, etc.
 
 Ejemplos de uso:
 ```
@@ -449,7 +452,7 @@ Console.WriteLine("Lo escrito es {0}", Console.ReadLine());
 int divisor = int.Parse(Console.ReadLine())
 ```
 
-Existen otras instrucciones de entrada por teclado: "Console.ReadKey()" lee una pulsación, mientras "Console.Read()" devuelve el código ASCII del primer carácter de la frase que se introduzca por teclado, aunque espera a la pulsación del ENTER para reaccionar. Ninguno de los dos métodos lo utilizaremos en el módulo.
+Existen otras instrucciones de entrada por teclado: **"Console.ReadKey()"** lee una pulsación, mientras **"Console.Read()"** devuelve el código ASCII del primer carácter de la frase que se introduzca por teclado, aunque espera a la pulsación del ENTER para reaccionar. Ninguno de los dos métodos lo utilizaremos en el módulo.
 
 
 
@@ -457,7 +460,7 @@ Existen otras instrucciones de entrada por teclado: "Console.ReadKey()" lee una 
 
 Las instrucciones de salida son las que muestran datos desde nuestro programa. A lo largo del módulo vamos a ver dos formas de hacerlo: mediante la impresión por pantalla y mediante ficheros (UF3).
 
-En cuanto a la salida por pantalla, utilizaremos los métodos "Console.Write()" y "Console.WriteLine()". Son métodos que necesitan un parámetro para funcionar correctamente: el texto a mostrar. Este texto puede ser un literal, puede contenerse en una variable, ser el resultado de una operación matemática o lógica, o el resultado de la ejecución de otra función, etc.
+En cuanto a la salida por pantalla, utilizaremos los métodos **"Console.Write()"** y **"Console.WriteLine()"**. Son métodos que necesitan un parámetro para funcionar correctamente: el texto a mostrar. Este texto puede ser un literal, puede contenerse en una variable, ser el resultado de una operación matemática o lógica, o el resultado de la ejecución de otra función, etc.
 
 Ejemplos de uso:
 ```
@@ -467,7 +470,7 @@ Console.WriteLine("Lo escrito es {0}", Console.ReadLine());
 Console.WriteLine("3 más 2 es {0}", 3+2);
 ```
 
-La diferencia entre ambas es que "Console.WriteLine()" finaliza con un salto de línea (lo siguiente que se muestre se hará en una nueva línea) mientras que "Console.Write()" termina con el cursor en el siguiente carácter, es decir, no pasa la siguiente línea y lo siguiente que se muestra se hará a continuación.
+La diferencia entre ambas es que **"Console.WriteLine()"** finaliza con un salto de línea (lo siguiente que se muestre se hará en una nueva línea) mientras que **"Console.Write()"** termina con el cursor en el siguiente carácter, es decir, no pasa la siguiente línea y lo siguiente que se muestra se hará a continuación.
 
 
 
@@ -508,19 +511,7 @@ La diferencia entre ambas es que "Console.WriteLine()" finaliza con un salto de 
 
 
 
-<a name="installation"></a>
 
-## Installation
-
-If you want to use this website as a template to create your own version, following the next steps:
-
-- 🖥️ Open yor favorite terminal.
-- 📂 Navigate to the folder where you want to clone this repository.
-- 📋 Copy and paste the following text: ```git@github.com:juancumbeq/juancumbe-site.git <insert a name for the project folder>```.
-- 📝 Open the project with your favorite IDE o text editor.
-- 🛠️ Start building your own version! Enjoy it! 😊
-
-<br>
 
 <a name="technologies-used"></a>
 
@@ -539,44 +530,7 @@ This website represents the first versión of my portfolio. As such, I chose not
 <a name="file-structure"></a>
 
 
-## File Structure 
 
-Representation of the proyect's file structure:
-
-```
-
-```
-
-<br>
-
-<a name="screenshots"></a>
-
-## Screenshots
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/juancumbe.png?raw=true" width= "90%" title="screenshot">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/aboutme.png?raw=true" width= "90%" title="screenshot">
-</p>
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/portfolio.png?raw=true" width= "90%" title="screenshot">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/education.png?raw=true" width= "90%" title="screenshot">
-</p>
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/skills.png?raw=true" width= "90%" title="screenshot">
-  <img src="https://github.com/juancumbeq/juancumbe-site/blob/main/assets/readme/hitmeup.png?raw=true" width= "90%" title="screenshot">
-</p>
-
-<br>
-
-<a name="license"></a>
-
-## License
-
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
-
-<br>
 
 <a name="author"></a>
 
