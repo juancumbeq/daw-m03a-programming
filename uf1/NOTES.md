@@ -383,17 +383,22 @@ do {
 ```
 
 
-
 #### Instrucción de salto en bucles: Break
 
 La instrucción break finaliza la ejecución del bucle más próximo.
 El control se pasa al instrucción que hay a continuación de la instrucción finalizada, si existe.
 También sirve dentro de condicionales.
 
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/05_Break.cs)
+
+
 #### Instrucción de salto en bucles: Continue
 
 La instrucción "continue" transfiere el control a la siguiente iteración de ls instrucción envolvente (while, for...)
 También sirve dentro de condicionales.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/06_Continue.cs)
+
 
 
 ### Diagrama de flujo
@@ -411,7 +416,7 @@ En un diagrama de flujo, los pasos se representan mediante símbolos gráficos q
 El objetivo de un diagrama de flujo en programación es proporcionar una representación visual clara y concisa del algoritmo o proceso, lo que facilita su comprensión, análisis y depuración. Es una herramienta útil tanto para programadores que están diseñando un algoritmo como para aquellos que necesitan entender el funcionamiento de un código existente.
 
 <p align="center">
-  <img src="" alt="diagrama de flujo">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/DiagramaDeFlujo.png?raw=true" width= "50%" alt="if..else if..else">
 </p>
 
 
@@ -424,7 +429,7 @@ En programación, el pensamiento computacional implica pensar de manera estructu
 El pensamiento computacional no se limita solo a programadores; es una habilidad cognitiva fundamental que puede ser útil en una amplia variedad de campos, desde la resolución de problemas matemáticos hasta la toma de decisiones en negocios y ciencia. En resumen, el pensamiento computacional es una forma de pensar críticamente y resolver problemas utilizando los principios de la informática y la programación.
 
 <p align="center">
-  <img src="" alt="pensamiento computacional">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/PensamientoComputacional.png?raw=true" width= "50%" alt="if..else if..else">
 </p>
 
 
