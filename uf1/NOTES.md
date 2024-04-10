@@ -143,6 +143,7 @@ namespace dawm03a_programming
 // true
 ```
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_StringOperations.cs)
+
 <br>
 
 #### Caracteres especiales:
@@ -265,35 +266,15 @@ Console.WriteLine((int)b);
 int.Parse("100");
 ```
 
+<br>
+<br>
 
-
-
-
-
-
-
-### Métodos Básicos
-Clase Console
-- Write()
-- WriteLine()
-- ReadLine()
-- Read()
-- ReadKey()
-
-
-
-
-
-
-
-
-
-### Instrucciones de control condicionales: IF/SWITCH.
+## Instrucciones de control condicionales: IF/SWITCH.
 
 <p align="center">
-  <img src="" alt="if">
-  <img src="" alt="if..else">
-  <img src="" alt="if..else if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If.png?raw=true" alt="if">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else.png?raw=true" alt="if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else%20if..else.png?raw=true" alt="if..else if..else">
 </p>
 
 
