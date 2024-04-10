@@ -272,9 +272,9 @@ int.Parse("100");
 ## Instrucciones de control condicionales: IF/SWITCH.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If.png?raw=true" alt="if">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else.png?raw=true" alt="if..else">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else%20if..else.png?raw=true" alt="if..else if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If.png?raw=true" width= "19%" alt="if">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else.png?raw=true" width= "22.5%" alt="if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else%20if..else.png?raw=true" width= "45.5%" alt="if..else if..else">
 </p>
 
 
@@ -308,7 +308,7 @@ if(i < 2)
 }
 ```
 
-#### Switch
+#### Switch
 ```
 using System;
 
@@ -338,18 +338,20 @@ namespace daw_m03a_programming
     }
 }
 
-OUTPUT
-Case 1
+// OUTPUT
+// Case 1
 ```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/04_Switch-Case.cs)
 
+<br>
+<br>
 
-
-### Instrucciones de control iterativas: WHILE/FOR.
+## Instrucciones de control iterativas: WHILE/FOR.
 
 <p align="center">
-  <img src="" alt="while">
-  <img src="" alt="do..while">
-  <img src="" alt="for">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/While.png?raw=true" width= "33%" alt="if">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Do..While.png?raw=true" width= "33%" alt="if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/For.png?raw=true" width= "33%" alt="if..else if..else">
 </p>
 
 
