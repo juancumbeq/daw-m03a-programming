@@ -416,7 +416,7 @@ En un diagrama de flujo, los pasos se representan mediante símbolos gráficos q
 El objetivo de un diagrama de flujo en programación es proporcionar una representación visual clara y concisa del algoritmo o proceso, lo que facilita su comprensión, análisis y depuración. Es una herramienta útil tanto para programadores que están diseñando un algoritmo como para aquellos que necesitan entender el funcionamiento de un código existente.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/DiagramaDeFlujo.png?raw=true" width= "50%" alt="if..else if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/DiagramaDeFlujo.png?raw=true" width= "50%" alt="Diagrama de Flujo">
 </p>
 
 <br>
@@ -430,7 +430,7 @@ En programación, el pensamiento computacional implica pensar de manera estructu
 El pensamiento computacional no se limita solo a programadores; es una habilidad cognitiva fundamental que puede ser útil en una amplia variedad de campos, desde la resolución de problemas matemáticos hasta la toma de decisiones en negocios y ciencia. En resumen, el pensamiento computacional es una forma de pensar críticamente y resolver problemas utilizando los principios de la informática y la programación.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/PensamientoComputacional.png?raw=true" width= "50%" alt="if..else if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/PensamientoComputacional.png?raw=true" width= "50%" alt="pesamiento computacional">
 </p>
 
 <br>
@@ -483,11 +483,17 @@ La diferencia entre ambas es que **"Console.WriteLine()"** finaliza con un salto
 int num1 = 5, num2 = 8;
 ```
 
+<br>
+
 #### Main(string[] args):
 Recoge argumentos de línea de comandos.
 
+<br>
+
 #### TryParse():
 Devuelve tre o false en caso de que sea o no posible la transformación.
+
+<br>
 
 #### return VS break VS continue:
 
@@ -497,11 +503,136 @@ Devuelve tre o false en caso de que sea o no posible la transformación.
 
 - continue: finaliza la ejecución de la iteración y continúa con la siguiente del bucle.
 
+<br>
+<br>
+
+## Tipos de datos simples
+
+En programación, los tipos de datos simples son tipos de datos que no se pueden dividir o descomponer en datos más pequeños.
+
+Cumplen tres características:
+- Son indivisibles
+- Tiene existencia propia
+- Permiten operaciones relacionales
+
+Los tipos simples predefinidos son los tipos de datos numéricos (int, short, decimal, double, etc...), los tipos de datos textuales (char) y tipos de datos lógicos (bool). 
+
+<br>
+
+#### Enum
+El tipo de dato enumerado (enum) es un tipo de dato ambiguo. Se considera simple, pero algunos lo definen como compuesto. Está definido por el usuario, es decir, no está predefinido por el sistema.
+```
+enum DiasSemana {lunes, martes, miercoles, jueves, viernes, sabado, domingo};
+enum Jugadores {RuiSilva = 13, LuisFelipe = 19, Edgar = 3};
+```
+Es un conjunto de constantes que se debe crear al ser declarado. Para definir un tipo de enumeración, utilizamos la palabra clave **enum** y especificamos los nombres de componentes de la enumeración. Las constantes son de tipo **int** por defecto, pero se puede especificar otro tipo de dato para ellas:
+```
+enum Respuestas: short {no, si, tal_vez};
+```
+
+
+<br>
+<br>
+
+## Tipos de datos compuestos
+
+En programación, los tipos de datos compuestos son tipos de datos que se crean mediante la unión de varios tipos (simples o compuestos).
+
+Se llaman tradicionalmente **arrays**, y pueden tener varias dimensiones:
+- Vectores: arrays unidimensionales, es decir, de una dimensión.
+- Multidimensionales
+  - Matrices: arrays bidimensionales, es decir, de dos dimensiones.
+  - Arrays de tres o más dimensiones.
+
+En C# la longitud de los arrays y matrices es inmutable. No pueden crecer más allá del tamaño especificado en la declaración del mismo.
+
+<br>
+<br>
+
+## Vectores
+
+Se trata de una lista de variables con el mismo nombre pero distinto índice. El índice hace referencia a su posición en la lista o array, siempre empezando por 0.
+```
+int[] v = new int[10]; // El vector se llena de ceros
+char[] ac = new char[]{'a', 'b', 'c', 'd', 'e'};
+int[] impares = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+```
+
+El primer valor guardado en la lista tiene índice 0, y se incrementa de 1 en 1:
+```
+Console.WriteLine(impares[5]); // Mostrará el 6º valor, 11 
+```
+Al ser variables, pueden cambiar su valor (no como el tipo de datos enum)
+```
+impares[5] = 21; // Ahora el vector es {1, 3, 5, 7, 9, 21, 13, 15, 17, 19}
+```
+
+La declaración de un array es:
+```
+<tipo>[] <nombre> = new <tipo>[<tamaño>];
+```
+
+<br>
+
+#### Recorrer un Vector: Bucles For y Foreach
+```
+int[] numPrimos = new int[5] {1, 2, 3, 5, 7};
+for(int i = 0; i < 5; i++)
+{
+  Console.WriteLine("El siguiente número primo es {0}", numPrimos[i]);
+}
+```
+```
+int[] numPrimos = new int[5] {1, 2, 3, 5, 7};
+foreach(int primo in numPrimos)
+{
+  Console.WriteLine("El siguiente número primo es {0}", primo);
+}
+```
+<br>
+<br>
+
+## Matrices
+
+Se trata de un tabla de variables con el mismo nombre pero con distinta posición de fila y columna. Esa relación fila-columna indica su posición en la tabla, y ambas empienzan siempre por 0.
+```
+bool[,] matriz = new bool[2,3];
+int[,] array2D = new int[,] {{1, 2}, {3, 4}, {5, 6}, {7, 8}};
+int[,] miMatriz = new int[4,2] {{1, 2}, {3, 4}, {5, 6}, {7, 8}};
+```
+El primer valor guardado en la tabla se ubica en la fila 0, columna 0.
+```
+Console.WriteLine(array2D[1,0]); // Mostrará el valor de la 2ª fila, 1ª columna, 3.
+```
+Al ser variables, pueden cambiar su valor.
+```
+miMatriz[1,1] = 21; // Ahora la matriz es {{1, 2}, {3, 21}, {5, 6}, {7, 8}}.
+```
+La declaración de una matriz es:
+```
+<tipo>[,] <nombre> = new <tipo>[<fila>, <columnas>];
+```
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Matrices.png?raw=true" width= "50%" alt="matrices">
+</p>
+
+<br>
+<br>
+
+
+#### Tipo de dato String
 
 
 
+<br>
+<br>
 
+## Debug y tipos de errores. Ejecución paso a paso
 
+<br>
+<br>
+
+## PAC de desarrollo
 
 
 
