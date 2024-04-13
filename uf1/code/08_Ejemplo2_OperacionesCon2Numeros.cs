@@ -1,3 +1,5 @@
+// Crea un programa que guarde dos números (los que tú quieras), y a continuación muestre por pantalla las cinco operaciones aritméticas: suma, resta, multiplicación, división y resto.
+
 using System;
 
 namespace daw_m03a_programming

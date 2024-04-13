@@ -506,6 +506,49 @@ Devuelve tre o false en caso de que sea o no posible la transformación.
 <br>
 <br>
 
+## Ejercicios Voluntarios PT.1
+#### Ejemplo 1: ¿Cómo te llamas?
+
+Crea un programa que muestre la pregunta "¿Cómo te llamas? Y a continuación espere a que el usuario teclee su nombre, guardando la entrada de teclado en una variable. Por último, debe mostrar el saludo !Hola, **nombre**!
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/07_Ejemplo1_EntradaDeTexto.cs)
+
+<br>
+
+#### Ejemplo 2: Operaciones con 2 números
+
+Crea un programa que guarde dos números (los que tú quieras), y a continuación muestre por pantalla las cinco operaciones aritméticas: suma, resta, multiplicación, división y resto.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/08_Ejemplo2_OperacionesCon2Numeros.cs)
+
+<br>
+
+#### Ejemplo 3: Operaciones con 2 números (II)
+
+Sin borrar el ejercicio anterior, ahora los valores numéricos de las variables deben ser introducidos por el usuario. Debe pedirse por pantalla de forma: "Escribe el operando 1: " y espere a que el usuario introduzca un número, y "Escribe el operando 2: " y espere a que el usuario introduzca el segundo número.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/09_Ejemplo3_OperacionesCon2Numeros.cs)
+
+<br>
+
+#### Ejemplo 4: Operaciones con 2 números (III)
+
+Sin borrar el ejercicio anterior, ahora después de que el usuario introduzca los dos operandos, el programa debe preguntar al usuario qué operación quiere realizar. Dependiendo de lo que el usuario introduzca por teclado, el programa solo debe mostrar por pantalla la operación seleccionada.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/10_Ejemplo4_OperacionesCon2Numeros.cs)
+
+<br>
+
+#### Ejemplo 5: Operaciones con 2 números (IV)
+
+Sin borrar el ejercicio anterior, añade una posibilidad a las operaciones que sea finalizar. Cuando el usuario escribe finalizar, el programa terminará, pero si el usuario escribe cualquier otra operación, después de mostrar el resultado, el programa debe pedir de nuevo al usuario dos operandos y una operación.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/11_Ejemplo5_OperacionesCon2Numeros.cs)
+
+
+<br>
+<br>
+
 ## Tipos de datos simples
 
 En programación, los tipos de datos simples son tipos de datos que no se pueden dividir o descomponer en datos más pequeños.
@@ -574,6 +617,25 @@ La declaración de un array es:
 
 <br>
 
+#### Tipo de dato String como un Vector
+
+Los tipos de datos String son en esencia un array de caracteres (char), es por ello que podemos ejecutar los siguientes métodos:
+```
+static void Main(string[] args)
+{
+  String nombre = "Ilerna";
+
+  Console.WriteLine(nombre.Length);
+  Console.WriteLine(nombre.Trim());
+  Console.WriteLine(nombre.Contains("a"));
+  Console.WriteLine(nombre.Substring(2));
+  Console.WriteLine(nombre[4]); // Usamos un índice para acceder al caracter indicado.
+  Console.WriteLine(nombre.ToUpper());
+}
+```
+
+<br>
+
 #### Recorrer un Vector: Bucles For y Foreach
 ```
 int[] numPrimos = new int[5] {1, 2, 3, 5, 7};
@@ -612,17 +674,134 @@ La declaración de una matriz es:
 ```
 <tipo>[,] <nombre> = new <tipo>[<fila>, <columnas>];
 ```
+Representación gráfica de matrices:
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Matrices.png?raw=true" width= "50%" alt="matrices">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Matrices.png?raw=true" width= "100%" alt="matrices">
 </p>
 
 <br>
+
+#### Recorrer una Matriz: Bucles For
+```
+int[,] tabla = new int[3,3] {{1, 3, 4}, {8, 5, 0}, {5, 99, 18}};
+for(int i = 0; i < 3; i++)
+{
+  for(int j = 0; j < 3; j++)
+  {
+    Console.Write(tabla[i,j] + "\t");
+  }
+  Console.Write("\n");
+}
+```
+
+<br>
 <br>
 
+## Ejercicios Voluntarios PT.2
+#### Ejercicio Voluntario 1:
 
-#### Tipo de dato String
+Desarrolla un algoritmo que permita determinar a partir de un númera de días ingresado por pantalla (teclado), cuántos años, meses, semanas, y días son. Supón que todos los meses son de 30 días.
+```
+using System;
+
+namespace daw_m03a_programming
+{
+    class ExVoluntario1
+    {
+        static void Main(string[] args)
+        {
+            int years;
+            int months;
+            int weeks;
+            int days;
+            
+            Console.Write("Introduce un número de días: ");
+            int num = int.Parse(Console.ReadLine());
+            
+            years = num / 365;
+            months = (num % 365) / 30;
+            weeks = ((num % 365) % 30) / 7;
+            days = (((num % 365) % 30) % 7);
+            
+            if (years > 0)
+            {
+                Console.WriteLine($"AÑOS: {years}");
+            }
+            if(months > 0)
+            {
+                Console.WriteLine($"MESES: {months}");
+            }
+            if(weeks > 0)
+            {
+                Console.WriteLine($"SEMANAS: {weeks}");
+            }
+            if (days > 0){
+                Console.WriteLine($"DIAS: {days}");
+            }
+        }
+    }
+}
+
+// OUTPUT
+// Introduce un número de días: 391
+// AÑOS: 1
+// SEMANAS: 3
+// DIAS: 5
+```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/12_EjercicioVoluntario1.cs)
+
+<br>
+
+#### Ejercicio Voluntario 2:
+
+Escribe un programa que declare un vector de números enteros tamaño 10, que pida los valores por teclado y que cuente los números pares que tiene.
+```
+// Escribe un programa que declare un vector de números enteros tamaño 10, que pida los valores por teclado y que cuente los números pares que tiene.
+
+using System;
+
+namespace daw_m03a_programming
+{
+    class ExVoluntario2
+    {
+        static void Main(string[] args)
+        {
+            int[] vector = new int[10];
+
+            for (int i = 0; i < vector.Length; i++)
+            {
+                Console.Write("Introduzca un número: ");
+                vector[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Los números pares del array son: ");
+
+            for (int j = 0; j < vector.Length; j++)
+            {
+
+                if ((vector[j] % 2 == 0))
+                {
+                    Console.Write($" {vector[j]} ");
+                }
+            }
+        }
+    }
+}
 
 
+// OUTPUT
+// Introduzca un número: 2
+// Introduzca un número: 3
+// Introduzca un número: 4
+// Introduzca un número: 5
+// Introduzca un número: 6
+// Introduzca un número: 7
+// Introduzca un número: 8
+// Introduzca un número: 9
+// Introduzca un número: 10
+// Los números pares del array son:  2  4  6  8  10
+```
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/13_EjercicioVoluntario2.cs)
 
 <br>
 <br>
@@ -640,27 +819,6 @@ La declaración de una matriz es:
 
 
 
-<br>
-
-<a name="uf2"></a>
-
-## UF2: Diseño modular
-
-- Escribir y probar programas sencillos reconociendo y aplicando los fundamentos de la programación modular.
-
-
-<br>
-
-<a name="uf3"></a>
-
-## UF3: Fundamentos de gestión de ficheros
-
-- Diseña, prueba y documenta programas que realizan diferentes operaciones sobre ficheros, documentando el programa y las pruebas realizadas.
-
-<br>
-
-
-
 
 
 <a name="technologies-used"></a>
@@ -675,9 +833,6 @@ This website represents the first versión of my portfolio. As such, I chose not
   <img src="https://img.shields.io/badge/bootstrap-%2523?style=for-the-badge&logo=bootstrap&logoColor=black&color=E9ECEF" alt="bootstrap" class='lang'>
 </p>
 
-<br>
-
-<a name="file-structure"></a>
 
 
 

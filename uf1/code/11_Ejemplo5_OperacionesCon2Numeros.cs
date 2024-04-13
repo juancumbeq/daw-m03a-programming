@@ -1,8 +1,10 @@
+// Sin borrar el ejercicio anterior, añade una posibilidad a las operaciones que sea finalizar. Cuando el usuario escribe finalizar, el programa terminará, pero si el usuario escribe cualquier otra operación, después de mostrar el resultado, el programa debe pedir de nuevo al usuario dos operandos y una operación.
+
 using System;
 
 namespace daw_m03a_programming
 {
-    class Ejemplo3
+    class Ejemplo5
     {
         static void Main(string[] args)
         {

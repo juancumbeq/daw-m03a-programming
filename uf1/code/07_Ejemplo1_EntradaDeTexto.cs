@@ -1,3 +1,5 @@
+// Crea un programa que muestre la pregunta "¿Cómo te llamas? Y a continuación espere a que el usuario teclee su nombre, guardando la entrada de teclado en una variable. Por último, debe mostrar el saludo !Hola, **nombre**!
+
 using System;
 
 namespace daw_m03a_programming

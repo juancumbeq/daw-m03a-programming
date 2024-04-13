@@ -1,3 +1,5 @@
+// Sin borrar el ejercicio anterior, ahora los valores numéricos de las variables deben ser introducidos por el usuario. Debe pedirse por pantalla de forma: "Escribe el operando 1: " y espere a que el usuario introduzca un número, y "Escribe el operando 2: " y espere a que el usuario introduzca el segundo número.
+
 using System;
 
 namespace daw_m03a_programming
