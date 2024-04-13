@@ -816,13 +816,39 @@ Se pide:
 - Imprimir por consola la suma de todas las cifras numéricas que tiene la frase (cada cifra por separado)
 - Imprimir por consola solo las consonantes, en mayúsculas, y en el orden que las va encontrando en la misma línea. 
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/Pac_Desarrollo.cs.cs)
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/Pac_Desarrollo.cs)
 
 <br>
 <br>
 
+## Ejercicios Voluntarios PT.3
+#### Ejercicio en vivo 1:
+
+Realiza un programa que permite ingresar los nombres de 5 empleados y sus sueldos respectivos. El programa debe mostrar el sueldo mayor y el nombre del empleado al que pertenece.
+
+A tener en cuenta:
+ - Los sueldos son de tipo double.
+ - Los nombres deben ser de tipo String.
+ - Ninguno puede tener sueldo 0.
 
 
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/14_EjercicioEnVivo1.cs)
+
+<br>
+
+#### Ejercicio en vivo 2:
+Realiza un programa que rellene aleatoriamente un matriz de 2x3 (2 filas y 3 columnas). El programa debe mostrarla en forma de tabla después de que se haya rellenado.
+
+A tener en cuenta:
+ - Los números deben ser de tipo int.
+ - Tendrás que utilizar la clase Random.
+
+Funcionalidad extra: muestra junto a cada fila y columna el resultado de la suma de todos los números que la componen.
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/15_EjercicioEnVivo2.cs)
+
+<br>
+<br>
 
 <a name="technologies-used"></a>
 
