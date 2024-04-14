@@ -14,7 +14,20 @@ namespace daw_m03a_programming
     {
         static void Main(string[] args)
         {
-          
+            // Declaración de matriz
+            int[,] matriz = new int[2,3];
+
+            // Inicialización de matriz
+            Random aleatorio = new Random();
+            for(int i= 0; i < matriz.GetLength(0); i++) // GetLength da el # de rows
+            {
+                for(int j= 0; j < matriz.GetLength(1); j++) // GetLength da el # de columns
+                {
+                    matriz[i,j] = aleatorio.Next(0, 10);
+                    Console.Write(matriz[i,j] + "\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
