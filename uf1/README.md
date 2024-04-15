@@ -3,33 +3,33 @@
 <br>
 
 ## Index
-  - [Obetivos](#uf1)
+  - [Obetivos]()
   - [Variables en C#. Operaciones con variables.]()
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
-  - [Obetivos](#uf1)
+  - [Variables numéricas]()
+  - [Variables textuales]()
+  - [Variables booleanas]()
+  - [Conversión de variables en C#]()
+  - [Intrucciones de control condicional: IF / SWITCH]()
+  - [Intrucciones de control iterativas: WHILE / FOR]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
+  - [Obetivos]()
 
 
 
@@ -77,12 +77,16 @@ string cadena;
 double num;
 ```
 
+<br>
+
 #### Asignación:
 ```
 i = 0;
 cadena = "Hola";
 num = 8/3;
 ```
+
+<br>
 
 #### Declaración y asignación:
 ```
@@ -277,12 +281,17 @@ namespace daw_m03a_programming
 ```
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/03_Conversions2.cs)
 
+<br>
+
 ##### Conversiones implícitas
 
 ```
 long b = a;
 Console.WriteLine(b);
 ```
+
+<br>
+
 ##### Conversiones explícitas
 ```
 float b = 8/3;
@@ -294,7 +303,7 @@ int.Parse("100");
 <br>
 <br>
 
-## Instrucciones de control condicionales: IF/SWITCH.
+## Instrucciones de control condicional: IF/SWITCH.
 
 <p align="center">
   <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If.png?raw=true" width= "19%" alt="if">
@@ -379,6 +388,7 @@ namespace daw_m03a_programming
   <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/For.png?raw=true" width= "33%" alt="if..else if..else">
 </p>
 
+<br>
 
 #### while
 ```
@@ -389,6 +399,8 @@ for (int i = 0; i < 3; i++)
 }
 ```
 
+<br>
+
 #### do..while
 ```
 int i = 0;
@@ -397,6 +409,8 @@ while (i < 3) {
   i++;
 }
 ```
+
+<br>
 
 #### for
 ```
@@ -407,6 +421,7 @@ do {
 } while (i < 3);
 ```
 
+<br>
 
 #### Instrucción de salto en bucles: Break
 
@@ -417,6 +432,8 @@ También sirve dentro de condicionales.
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/05_Break.cs)
 
 
+<br>
+
 #### Instrucción de salto en bucles: Continue
 
 La instrucción "continue" transfiere el control a la siguiente iteración de ls instrucción envolvente (while, for...)
@@ -426,7 +443,7 @@ También sirve dentro de condicionales.
 
 
 
-### Diagrama de flujo
+## Diagrama de flujo
 
 Un diagrama de flujo es una representación gráfica de los pasos lógicos y secuenciales que sigue un proceso o algoritmo. En programación, un diagrama de flujo es una herramienta visual utilizada para planificar, comprender y comunicar la lógica de un programa o algoritmo antes de comenzar a escribir el código.
 
@@ -446,7 +463,7 @@ El objetivo de un diagrama de flujo en programación es proporcionar una represe
 
 <br>
 
-### Pensamiento computacional
+## Pensamiento computacional
 
 El pensamiento computacional es un enfoque para resolver problemas y diseñar sistemas que se basa en conceptos fundamentales de la informática. Implica descomponer problemas complejos en partes más simples, identificar patrones y abstracciones, y diseñar algoritmos eficientes para resolverlos.
 
@@ -479,7 +496,7 @@ int divisor = int.Parse(Console.ReadLine())
 
 Existen otras instrucciones de entrada por teclado: **"Console.ReadKey()"** lee una pulsación, mientras **"Console.Read()"** devuelve el código ASCII del primer carácter de la frase que se introduzca por teclado, aunque espera a la pulsación del ENTER para reaccionar. Ninguno de los dos métodos lo utilizaremos en el módulo.
 
-
+<br>
 
 #### Salida
 
