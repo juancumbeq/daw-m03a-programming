@@ -89,3 +89,46 @@ namespace daw_m03a_programming
 // Nombre: pepe5, Salario: 50
 
 // El salario máximo pertenece a pepe5, con una cantidad de 50
+
+
+
+
+
+// Solución
+using System;
+
+namespace Videotutoria
+{
+    class Program
+    {
+        static void Main()
+        {
+            double[] sueldos = new double[5];
+            double[] empleados = new string[5];
+            int indiceMax = 0;
+
+            for(int i = 0; i < sueldos.Length; i++)
+            {
+                Console.Write("Introduce el nombre del empleado {0}: ", i);
+                empleados[i] = Console.ReadLine();
+                
+                Console.Write("Introduce su sueldo (mayor que 0) del empleado número {0}: ", i);
+                
+                do
+                {
+                    sueldos[i] = double.Parse(Console.ReadLine());
+                } while(sueldos[i] <= 0);
+            }
+
+            for(int indice = 1; indice < sueldos.Length; indice++)
+            {
+                if(sueldos[indiceMax] < sueldos[indice])
+                {
+                    indiceMax = indice;
+                }
+            }
+            Console.WriteLine("El mayor sueldo lo cobra: {0}", empleados[indiceMax]);
+            Console.WriteLine("Y es de: {0}", sueldos[indiceMax]);
+        }
+    }
+}

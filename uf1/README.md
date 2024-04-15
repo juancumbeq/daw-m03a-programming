@@ -1,8 +1,8 @@
-## UF1: PROGRAMACIÓN ESTRUCTURADA
-<br>
+# UF1: PROGRAMACIÓN ESTRUCTURADA
+
 <br>
 
-# Index
+## Index
 
   - [UF1: Programación estructurada](#uf1)
   - [UF2: Diseño modular](#uf2)
@@ -850,55 +850,34 @@ Funcionalidad extra: muestra junto a cada fila y columna el resultado de la suma
 <br>
 <br>
 
-<a name="technologies-used"></a>
+## Depuración y Debug
+#### Ejecución paso a paso
 
-## Technologies Used
+Con F11 podemos iniciar la ejecución del programa pero esta se detendrá en cada una de las instrucciones. Será necesario seguir pulsando F11.
 
-This website represents the first versión of my portfolio. As such, I chose not to apply complex concepts or the most modern architectures. That's why this website was built using:
-<p align="center">
-  <img src="https://img.shields.io/badge/html5-%2523?style=for-the-badge&logo=html5&logoColor=black&color=E9ECEF" alt="html5" class='lang'>
-  <img src="https://img.shields.io/badge/css3-%2523?style=for-the-badge&logo=css3&logoColor=black&color=E9ECEF" alt="css3" class='lang'>
-  <img src="https://img.shields.io/badge/javascript-%2523?style=for-the-badge&logo=javascript&logoColor=black&color=E9ECEF" alt="javascript" class='lang'>
-  <img src="https://img.shields.io/badge/bootstrap-%2523?style=for-the-badge&logo=bootstrap&logoColor=black&color=E9ECEF" alt="bootstrap" class='lang'>
-</p>
+<br>
+
+#### Iniciar sin depuración
+
+Mediante CMD + F5 podemos iniciar la ejecución de nuestro programa sin pasar por la depuración.
+
+<br>
+
+#### Iniciar con depuración
+
+Para ello es necesario tener marcado al menos un break point en el margen lateral izquierdo del editor. Se inicia con F5
+
+<br>
+<br>
+
+## UF2: Programación Modular
+
+Acceder a la siguiente UF: [link]()
 
 
-
-
-
-<a name="author"></a>
+<br>
+<br>
 
 ## Author
 
 This project was implemented by Juan Cumbe. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. 😊
-
-
-
-
-
-
-
-
-
-
-
-PACs:
-- Introducción a la programación 
-- Variables, literales y constantes
-- Operadores y conversiones
-- Diseño de algoritmos
-- Tipos de datos simples y compuestos
-- Estructuras de repetición y salto (I)
-- Estructuras de repetición y salto (II)
-- Depuración de errores
-
-
-- Programación modular
-- Diseño descendente
-- Diseño de funciones
-- Recursividad
-- Librerías
-
-
-- Ficheros
-- Operaciones sobre ficheros
