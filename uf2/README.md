@@ -207,231 +207,82 @@ namespace daw_m03a_programming
 
 ## Ejemplo de programación modular
 
+Vamos a realizar una calculadora utilizando varios módulos (suma, resta, etc)
 
-
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_EjemploProgramacionModular.cs)
 <br>
 <br>
 
 ## Paso por valor y paso por referencia
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasosValorReferencia.png?raw=true" width= "100%" alt="pasos de variables">
+</p>
 
 #### Por valor
 Cuando ejecutamos una función que tiene parámetros pasados por vaor, se realiza una copia del parámetro que se ha pasado, es decir, que todas las modificaciones y/o cambios que se realicen se están haciendo en esta copia que se ha creado. El original no se modifica, de manera que no se altera su valor en la función.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasoPorValor.png?raw=true" width= "85%" alt="paso por valor">
+</p>
 
 <br>
 
 #### Paso por referencia
 Sin embargo, cuando ejecutamos una función que tiene parámetros pasados por referencia, todas aquellas modificaciones que se realicen en la función van a afectar a sus parámetros, ya que se trabaja con los originales.
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasoPorReferencia.png?raw=true" width= "100%" alt="paso por referencia">
+</p>
+
 <br>
 <br>
 
 ## Diferencias entre Arrays y Variables
-La página web de Microsoft dice que el paso de vectores por valor se hace mediante la palabra params, pero eso no impide que se pueda modificar su valor. Por lo tanto, el hecho de llamar a una función con la palabra params o sin ella, es funcionalmente idéntico.
+La página web de Microsoft dice que el paso de vectores por valor se hace mediante la palabra **params**, pero eso no impide que se pueda modificar su valor. Por lo tanto, el hecho de llamar a una función con la palabra **params** o sin ella, es funcionalmente idéntico.
 
 En cuanto a las variable individuales:
   - El paso por valor no necesita ningún tipo de palabra clave.
   - El paso por referencia necesita de una palabra clave, que puede ser:
-    - ref (como hemos visto) o también out (da igual, funciona igual) con la intención de modificar el valor de la variable original.
-    - in para pasar la variable por referencia, pero protegida en modo solo lectura (si se intenta modificar, el compilador arrojará un error).
+    - **ref** (como hemos visto) o también **out** (da igual, funciona igual) con la intención de modificar el valor de la variable original.
+    - **in** para pasar la variable por referencia, pero protegida en modo solo lectura (si se intenta modificar, el compilador arrojará un error).
 
 Ejemplos:
 
-
-
-
-
-
-
-
-
-<br>
-<br>
-
-
-
-<br>
-<br>
-
-## Instrucciones de control condicional: IF/SWITCH.
-
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If.png?raw=true" width= "19%" alt="if">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else.png?raw=true" width= "22.5%" alt="if..else">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/If..else%20if..else.png?raw=true" width= "45.5%" alt="if..else if..else">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/EjemplosValorReferencia.png?raw=true" width= "95%" alt="ejemplos">
 </p>
 
 
-#### if
-```
-if(i < 2)
-{
-  Console.WriteLine(i);
-}
-```
 
-#### if..else
-```
-if(i < 2)
-{
-  Console.WriteLine(i);
-} else {
-  i++;
-}
-```
 
-#### if..else if..else
-```
-if(i < 2)
-{
-  Console.WriteLine(i);
-} else if(i < 4 ){
-  i++;
-} else {
-  i+=;
-}
-```
 
-#### Switch
-```
-using System;
 
-namespace daw_m03a_programming
-{
-    class Switch_Case
-    {
-        static void Main(string[] args)
-        {
-            int number = 1;
-            
-            switch(number)
-            {
-                case 1:
-                    Console.WriteLine("Case 1");
-                    break;
-                
-                case 2:
-                    Console.WriteLine("Case 2");
-                    break;
-                
-                default:
-                    Console.WriteLine("Deafult Case");
-                    break;
-            }
-        }
-    }
-}
 
-// OUTPUT
-// Case 1
-```
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/04_Switch-Case.cs)
 
 <br>
 <br>
 
-## Instrucciones de control iterativas: WHILE/FOR.
 
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/While.png?raw=true" width= "33%" alt="if">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Do..While.png?raw=true" width= "33%" alt="if..else">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/For.png?raw=true" width= "33%" alt="if..else if..else">
-</p>
-
-<br>
-
-#### while
-```
-for (int i = 0; i < 3; i++)
-{
-  Console.WriteLine(i);
-  // Las llaves se pueden omitir cuando solo hay una única instrucción.
-}
-```
-
-<br>
-
-#### do..while
-```
-int i = 0;
-while (i < 3) {
-  Console.WriteLine(i);
-  i++;
-}
-```
-
-<br>
-
-#### for
-```
-int i = 0;
-do {
-  Console.WriteLine(i);
-  i++;
-} while (i < 3);
-```
-
-<br>
-
-#### Instrucción de salto en bucles: Break
-
-La instrucción break finaliza la ejecución del bucle más próximo.
-El control se pasa al instrucción que hay a continuación de la instrucción finalizada, si existe.
-También sirve dentro de condicionales.
 
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/05_Break.cs)
 
 
-<br>
-
-#### Instrucción de salto en bucles: Continue
-
-La instrucción "continue" transfiere el control a la siguiente iteración de ls instrucción envolvente (while, for...)
-También sirve dentro de condicionales.
-
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/06_Continue.cs)
-
-<br>
-<br>
-
-
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/DiagramaDeFlujo.png?raw=true" width= "50%" alt="Diagrama de Flujo">
-</p>
-
-<br>
-
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/PensamientoComputacional.png?raw=true" width= "50%" alt="pesamiento computacional">
-</p>
-
-<br>
-<br>
-
-
-
-<br>
-<br>
-
-
-<br>
-<br>
 
 
 
 
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/images/Matrices.png?raw=true" width= "100%" alt="matrices">
-</p>
-
-<br>
 
 
 
-<br>
-<br>
+
+
+
+
+
+
+
+
 
 ## UF3: 
 
