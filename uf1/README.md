@@ -3,39 +3,33 @@
 <br>
 
 ## Index
-  - [Obetivos]()
-  - [Variables en C#. Operaciones con variables.]()
-  - [Variables numéricas]()
-  - [Variables textuales]()
-  - [Variables booleanas]()
-  - [Conversión de variables en C#]()
-  - [Intrucciones de control condicional: IF / SWITCH]()
-  - [Intrucciones de control iterativas: WHILE / FOR]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
-  - [Obetivos]()
+  - [Obetivos](#objetivos)
+  - [Variables en C#. Operaciones con variables.](#variables-en-c-operaciones-con-variables)
+  - [Variables numéricas](#variables-numéricas)
+  - [Variables textuales](#variables-textuales)
+  - [Variables booleanas](#variables-booleanas)
+  - [Conversión de variables en C#](#conversión-de-variables-en-c)
+  - [Intrucciones de control condicional: IF / SWITCH](#instrucciones-de-control-condicional-ifswitch)
+  - [Intrucciones de control iterativas: WHILE / FOR](#instrucciones-de-control-iterativas-whilefor)
+  - [Diagrama de flujo](#diagrama-de-flujo)
+  - [Pensamiento computacional](#pensamiento-computacional)
+  - [C#: Tratamiento de cadenas](#c-tratamientos-de-cadenas)
+  - [Extras videotutorías](#extras-videotutorías)
+  - [Ejercicios voluntarios PT.1](#ejercicios-voluntarios-pt1)
+  - [Tipos de datos simples](#tipos-de-datos-simples)
+  - [Tipos de datos compuestos](#tipos-de-datos-compuestos)
+  - [Matrices](#matrices)
+  - [Ejercicios voluntarios PT.2](#ejercicios-voluntarios-pt2)
+  - [PAC de desarrollo](#pac-de-desarrollo)
+  - [Ejercicios voluntarios PT.3](#ejercicios-voluntarios-pt3)
+  - [DEputación y debug](#depuración-y-debug)
 
 
 
 <br>
 <br>
 
+<a name="objetivos"></a>
 
 ## Objetivos
 
@@ -259,6 +253,9 @@ namespace daw_m03a_programming
 // 42
 ```
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/02_Conversions1.cs)
+
+<br>
+
 ```
 using System;
 
@@ -441,7 +438,8 @@ También sirve dentro de condicionales.
 
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/06_Continue.cs)
 
-
+<br>
+<br>
 
 ## Diagrama de flujo
 
@@ -548,7 +546,7 @@ Devuelve tre o false en caso de que sea o no posible la transformación.
 <br>
 <br>
 
-## Ejercicios Voluntarios PT.1
+## Ejercicios voluntarios PT.1
 #### Ejemplo 1: ¿Cómo te llamas?
 
 Crea un programa que muestre la pregunta "¿Cómo te llamas? Y a continuación espere a que el usuario teclee su nombre, guardando la entrada de teclado en una variable. Por último, debe mostrar el saludo !Hola, **nombre**!
@@ -739,8 +737,8 @@ for(int i = 0; i < 3; i++)
 <br>
 <br>
 
-## Ejercicios Voluntarios PT.2
-#### Ejercicio Voluntario 1:
+## Ejercicios voluntarios PT.2
+#### Ejercicio voluntario 1:
 
 Desarrolla un algoritmo que permita determinar a partir de un númera de días ingresado por pantalla (teclado), cuántos años, meses, semanas, y días son. Supón que todos los meses son de 30 días.
 ```
@@ -794,7 +792,7 @@ namespace daw_m03a_programming
 
 <br>
 
-#### Ejercicio Voluntario 2:
+#### Ejercicio voluntario 2:
 
 Escribe un programa que declare un vector de números enteros tamaño 10, que pida los valores por teclado y que cuente los números pares que tiene.
 ```
@@ -863,7 +861,7 @@ Se pide:
 <br>
 <br>
 
-## Ejercicios Voluntarios PT.3
+## Ejercicios voluntarios PT.3
 #### Ejercicio en vivo 1:
 
 Realiza un programa que permite ingresar los nombres de 5 empleados y sus sueldos respectivos. El programa debe mostrar el sueldo mayor y el nombre del empleado al que pertenece.
@@ -892,7 +890,7 @@ Funcionalidad extra: muestra junto a cada fila y columna el resultado de la suma
 <br>
 <br>
 
-## Depuración y Debug
+## Depuración y debug
 #### Ejecución paso a paso
 
 Con F11 podemos iniciar la ejecución del programa pero esta se detendrá en cada una de las instrucciones. Será necesario seguir pulsando F11.
@@ -912,7 +910,7 @@ Para ello es necesario tener marcado al menos un break point en el margen latera
 <br>
 <br>
 
-## UF2: Programación Modular
+## UF2: PROGRAMACIÓN MODULAR
 
 Acceder a la siguiente UF: [enlace](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf2)
 
