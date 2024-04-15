@@ -253,6 +253,24 @@ Ejemplos:
   <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/EjemplosValorReferencia.png?raw=true" width= "95%" alt="ejemplos">
 </p>
 
+<br>
+<br>
+
+## Ejercicio opcional PT.1
+Escribir un programa con los siguiente módulos:
+
+  - Subprograma para generar números aleatorios entre 0 y 50 ambos inclusive y guardarlos en un vector de tamaño 10 creado en el MAIN.
+  - Subprograma para imprimir el vector resultante.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -264,27 +282,7 @@ Ejemplos:
 <br>
 
 
-
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/05_Break.cs)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## UF3: 
+## UF3: FUNDAMENTOS DE GESTIÓN DE FICHEROS
 
 Acceder a la siguiente UF: [enlace](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf3)
 
