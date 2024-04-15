@@ -22,14 +22,12 @@
   - [Ejercicios voluntarios PT.2](#ejercicios-voluntarios-pt2)
   - [PAC de desarrollo](#pac-de-desarrollo)
   - [Ejercicios voluntarios PT.3](#ejercicios-voluntarios-pt3)
-  - [DEputación y debug](#depuración-y-debug)
+  - [Depuración y debug](#depuración-y-debug)
 
 
 
 <br>
 <br>
-
-<a name="objetivos"></a>
 
 ## Objetivos
 
