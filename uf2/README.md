@@ -7,33 +7,16 @@
 <br>
 
 ## Index
-  - [Obetivos](#objetivos)
-  - [Variables en C#. Operaciones con variables.](#variables-en-c-operaciones-con-variables)
-  - [Variables numéricas](#variables-numéricas)
-  - [Variables textuales](#variables-textuales)
-  - [Variables booleanas](#variables-booleanas)
-  - [Conversión de variables en C#](#conversión-de-variables-en-c)
-  - [Intrucciones de control condicional: IF / SWITCH](#instrucciones-de-control-condicional-ifswitch)
-  - [Intrucciones de control iterativas: WHILE / FOR](#instrucciones-de-control-iterativas-whilefor)
-  - [Diagrama de flujo](#diagrama-de-flujo)
-  - [Pensamiento computacional](#pensamiento-computacional)
-  - [C#: Tratamiento de cadenas](#c-tratamientos-de-cadenas)
-  - [Extras videotutorías](#extras-videotutorías)
-  - [Ejercicios voluntarios PT.1](#ejercicios-voluntarios-pt1)
-  - [Tipos de datos simples](#tipos-de-datos-simples)
-  - [Tipos de datos compuestos](#tipos-de-datos-compuestos)
-  - [Matrices](#matrices)
-  - [Ejercicios voluntarios PT.2](#ejercicios-voluntarios-pt2)
-  - [PAC de desarrollo](#pac-de-desarrollo)
-  - [Ejercicios voluntarios PT.3](#ejercicios-voluntarios-pt3)
-  - [Depuración y debug](#depuración-y-debug)
-
-
-
-<br>
-<br>
-
-## Objetivos
+  - [Clases y objetos](#clases-y-objetos)
+  - [Definición de programación modular](#definición-de-programación-modular)
+  - [Procedimientos VS Funciones](#procedimientos-vs-funciones)
+  - [Partes de subprograma](#partes-de-un-subprograma)
+  - [Diseño descendente](#diseño-descendente)
+  - [Ejemplo de programación modular](#ejemplo-de-programación-modular)
+  - [Paso por valor o paso por referencia](#paso-por-valor-y-paso-por-referencia)
+  - [Diferencias entre Arrays y Variables](#diferencias-entre-arrays-y-variables)
+  - [Ejercicio opcional PT.1](#ejercicio-opcional-pt1)
+  - [Ejemplo de recursividad](#ejemplo-de-recursividad)
 
 <br>
 <br>
@@ -207,9 +190,10 @@ namespace daw_m03a_programming
 
 ## Ejemplo de programación modular
 
-Vamos a realizar una calculadora utilizando varios módulos (suma, resta, etc)
+Vamos a realizar una calculadora utilizando varios módulos (suma, resta, etc).
 
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_EjemploProgramacionModular.cs)
+
 <br>
 <br>
 
@@ -263,29 +247,22 @@ Escribir un programa con los siguiente módulos:
   - Subprograma para imprimir el vector resultante.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/02_EjercicioOpcionalPT1.cs)
 
 <br>
 <br>
 
+## Ejemplo de recursividad
+  - Calcular el factorial de un número usando un método no recursivo y recursivo.
+  - Fórmula para calcular el factorial de un número: (n! = n * (n - 1)!)
+
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/03_EjemploRecursividad.cs)
+
+<br>
+<br>
 
 ## UF3: FUNDAMENTOS DE GESTIÓN DE FICHEROS
-
 Acceder a la siguiente UF: [enlace](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf3)
-
 
 <br>
 <br>

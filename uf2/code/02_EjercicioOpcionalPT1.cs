@@ -4,57 +4,45 @@ namespace daw_m03a_programming
 {
     class EjemploProgramacionModular
     {
-
-        // Suma
-        static int suma(int v1, int v2)
+        // Generator
+        static int generator()
         {
-            return v1 + v2;
+            int num = 0;
+            Random aleatorio = new Random();
+            num = aleatorio.Next(10, 51);
+            return num;
         }
 
-        // Resta
-        static int resta(int v1, int v2)
+        // Printer
+        static void printVector(int[] vec)
         {
-            return v1 - v2;
+            Console.WriteLine("Vector resultante: \n");
+            for (int i = 0; i < vec.Length; i++)
+            {
+                Console.Write(vec[i] + " ");
+            }
         }
 
-        // Mutliplicación
-        static int multi(int v1, int v2)
-        {
-            return v1 * v2;
-        }
-
-        // División
-        static int div(int v1, int v2)
-        {
-            return v1 / v2;
-        }
 
         // Main
         static void Main(string[] args)
         {
-            int a = 0;
-            int b = 0;
+            int[] vector = new int[10];
 
-            Console.WriteLine("Introduce un número: ");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Introduce otro número: ");
-            b = int.Parse(Console.ReadLine());
+            // Filling the vector
+            for (int i = 0; i < vector.Length; i++)
+            {
+                vector[i] = generator();
+            }
 
-            Console.WriteLine("La suma es {0}", suma(a, b));
-            Console.WriteLine("La resta es {0}", resta(a, b));
-            Console.WriteLine("La multiplicación es {0}", multi(a, b));
-            Console.WriteLine("La división es {0}", div(a, b));
+            // Printing the vector
+            printVector(vector);
         }
     }
 }
 
 
 // OUTPUT
-// Introduce un número:
-// 1
-// Introduce otro número:
-// 2
-// La suma es 3
-// La resta es -1
-// La multiplicación es 2
-// La división es 0
+// Vector resultante:
+
+// 46 29 22 48 40 10 29 27 43 39
