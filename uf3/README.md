@@ -1,4 +1,4 @@
-# UF2: PROGRAMACIÓN MODULAR
+# UF3: FUNDAMENTOS DE GESTIÓN DE FICHEROS
 
 <p align="center">
   <img src="https://img.shields.io/badge/Proyecto%20-Finalizado-brightgreen"/>
@@ -8,57 +8,59 @@
 
 ## Index
   - [Clases y objetos](#clases-y-objetos)
-  - [Definición de programación modular](#definición-de-programación-modular)
-  - [Procedimientos VS Funciones](#procedimientos-vs-funciones)
-  - [Partes de subprograma](#partes-de-un-subprograma)
-  - [Diseño descendente](#diseño-descendente)
-  - [Ejemplo de programación modular](#ejemplo-de-programación-modular)
-  - [Paso por valor o paso por referencia](#paso-por-valor-y-paso-por-referencia)
-  - [Diferencias entre Arrays y Variables](#diferencias-entre-arrays-y-variables)
-  - [Ejercicio opcional PT.1](#ejercicio-opcional-pt1)
-  - [Ejemplo de recursividad](#ejemplo-de-recursividad)
 
 <br>
 <br>
 
-## Clases y objetos
+## Librerías: System.io - Clases
 
-#### ¿Qué es una clase?
-
-  - Plantilla oara la creación de objetos de datos según un modelo predefinido
-  - Se utilizan para representar entidades o conceptos, como los sustantivos en el lenguaje.
-  - Cada clase tiene sus propias variables (llamadas **atributos**) que indican su estado.
-  - Cada clase tiene sus propios **métodos** (funciones o procedimientos) para manipular esos atributos.
-```
-class Coche
-{
-  string marca;
-  int velocidad;
-  string color;
-
-  public satic bool Marcha(){
-    return(this.velocidad > 0);
-  }
-}
-```
+  - **File**: Proporciona métodos estáticos para crear, copiar, eliminar, mover, abrir un solo archivo. **Contribuye a la creación de objetos FileStream.** Métodos estáticos se refiere a que símplemente con llamar a la clase podemos ejecutar el método, sin necesidad de instanciar ningún objeto.
+  - **FileStream**: Proporciona un stream para un archivo, lo que **permite operaciones de lectura y escritura síncrona y asíncrona.**
+  - **StreamReader**: Es una clase que el programa va a usar para guardar la información de un **fichero que se abre por extracción de datos** (Lectura, Read). Lectura de datos en archivo secuencial (habrá un error si el archivo no existe).
+  - **StreamWriter**: Es una clase que el programa va a usar para guardar la información de un **fichero que se abre para escritura** (Write, escribir).
 
 <br>
+<br>
 
-#### ¿Qué es un objeto?
+## FileStream
 
-  - Cada entidad basada en una clase y creada a partir de ella es un objeto.
-  - Al proceso de crear objetos a partir de clases se le llama **instanciar**, y se dice que cada objeto es una **instancia** de la clase.
-  - Todas las instancias de una clase tendrán los mismos atributos (pero con valores distintos) y funcionarán con los mismos métodos.
-```
-var focus = new Coche();
-focus.marca = "Ford";
-focus.velocidad = 120;
+  - La clase FileStream proporciona un Stream (flujo) para un archivo, lo que permite operaciones de lectura y escritura.
+  - El modo en el que vamos a abrir el fichero (FileMode)
+    - **Open**: Abre un fichero existente. Si el fichero no existe, lanzará un error.
+    - **Append**: Abre un fichero para añadir datos al final del mismo si existe, o crea un fichero nuevo si no existe.
+    - **Create**: Crea un nuevo fichero. Si el fichero existe será sobrescrito.
+    - **Delete**: Borra un fichero (no se especifica FileAccess).
+  - El modo en el que accedemos al fichero (FileAccess):
+    - **Read**: Acceso para leer el archivo.
+    - **Write**: Acceso de escritura al archivo.
+    - **ReadWrite**: acceso de lectura y escritura al archivo.
+  - Ejemplo: ```FileStream ficheroOrigen = new FileStream("fondo.jpg", FileMode.Open, FileAccess.Read);```
 
-if(focus.Marcha() == true)
-{
-  Console.WriteLine("El coche de la marca {0} está en movimiento", focus.marca);
-}
-```
+<br>
+<br>
+
+## Stream vs Buffer
+
+  - La diferencia en pocas palabras entre un búffer y una Stream es que una Stream es una secuencia que transfiere información desde o hacia una fuente específica, mientras que un búfer es una secuencia de bytes que se almacena en la memoria. 
+    - Ejemplo de Stream: ```FileStream stream = new FileStream("filepath.txt", FileMode.OpenOrCreate);```
+    - Ejemplo de Búfer: ```byte[] fileContents = File.ReadAllBytes("filepath.txt")```
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>
