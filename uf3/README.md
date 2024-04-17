@@ -36,156 +36,42 @@
     - **ReadWrite**: acceso de lectura y escritura al archivo.
   - Ejemplo: ```FileStream ficheroOrigen = new FileStream("fondo.jpg", FileMode.Open, FileAccess.Read);```
 
+
+
 <br>
 <br>
 
 ## Stream vs Buffer
 
-  - La diferencia en pocas palabras entre un búffer y una Stream es que una Stream es una secuencia que transfiere información desde o hacia una fuente específica, mientras que un búfer es una secuencia de bytes que se almacena en la memoria. 
-    - Ejemplo de Stream: ```FileStream stream = new FileStream("filepath.txt", FileMode.OpenOrCreate);```
-    - Ejemplo de Búfer: ```byte[] fileContents = File.ReadAllBytes("filepath.txt")```
-  - 
+  - La diferencia en pocas palabras entre un búffer y una Stream es que una Stream es una secuencia que transfiere información desde o hacia una fuente específica, mientras que un búfer es una secuencia de bytes que se almacena en la memoria. Ejemplo de Stream: ```FileStream stream = new FileStream("filepath.txt", FileMode.OpenOrCreate);```
 
+  - Ejemplo de Búfer: ```byte[] fileContents = File.ReadAllBytes("filepath.txt")```. Lee todos los bytes de un archivo en la memoria. Esto es útil para cuando necesita manipular todo el archivo a la vez, o mantener una "copia local" para que su programa la guarde para que el archivo pueda estar libre para otros usos. Sin embargo, dependiendo del tamaño de la fuente y la cantidad de memoria disponible, un búfer que contiene el archivo completo podría no ser una opción.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-
-## Definición de programación modular
-#### Concepto
-
-- La programación modular consiste en dividir el problema original en diversos subproblemas, que se pueden resolver por separado, para, después, recomponer los resultados y obtener la solución al problema.
-- Un subproblema se denomina módulo (función o procedimiento), y es una parte del problema que se puede resolver de manera independiente.
-
-<br>
-
-#### Ventajas
-
-- Facilita el mantenimiento, de modificación y la documentación.
-- Facilita las pruebas (**Testing**).
-- Reutilización de módulos.
-- Independencia de fallos.
-
-<br>
-
-#### Desventajas
-
-- No se dispone de algoritmos formales de modularidad, por lo que a veces los programadores no tiene claras las ideas de los módulos -> experiencia
-
-<br>
-<br>
-
-## Procedimientos VS Funciones
-#### Función
-
-Ámbito de la declaración tipo Función
-```
-Nombre_funcion(parámetros){
-  // declaración de variables
-  // instrucciones
-  // retorno de tipo return
-}
-```
-Cuando la función llega a su fin, retornará un valor del mismo tipo de la función con la directiva return.
-
-<br>
-
-#### Procedimiento
-Ámbito de la declaración **void**
-```
-Nombre_procedimiento{
-  // instrucciones
-}
-```
-Un procedimiento no devueve un valor y por tanto **no incluye la directiva return**.
-
-Ejemplo:
-```
-using System;
-
-namespace daw_m03a_programming
-{
-    class Ejercicio
-    {
-
-        // Procedimiento
-        static void muestraPrompt()
-        {
-            Console.Write("Introduce un número: ");
-        }
-
-        // Función
-        static int leerNumero()
-        {
-            int num = 0;
-            num = int.Parse(Console.ReadLine());
-            return num;
-        }
-
-        static void Main(string[] args)
-        {
-            int suma = 0;
-
-            Console.WriteLine("Vamos a empezar: ");
-            for (int i = 0; i < 3; i++)
-            {
-                muestraPrompt();
-                suma = suma + leerNumero();
-            }
-            Console.WriteLine("La suma es {0}", suma);
-        }
-    }
-}
-
-
-// OUTPUT
-// Vamos a empezar:
-// Introduce un número: 1
-// Introduce un número: 2
-// Introduce un número: 3
-// La suma es 6
-```
-<br>
-
-#### Diferencias entre funciones y procedimiento
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/ProcedimientosFunciones.png?raw=true" width= "95%" alt="procedimiento vs función">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/FileStream.png?raw=true" width= "99%" alt="filestream">
 </p>
 
 <br>
 <br>
 
-## Partes de un subprograma
+## Ejercicio opcional PT.1
+  - Importar la librería System.IO
+  - Crear método 1: preguntar al usuario si quiere añadir algún alumno al fichero alumnos.txt o leer el fichero.
+  - Crear método 2: si el usuario decide leer el fichero, muestra el contenido de alumnos.txt.
+  - Crear método 3: si el usuario decide añadir algún alumno, preguntar su nombre y añadirlo a alumnos.txt.
+  - En el método MAIN(): ejecutar los método anteriores.
 
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PartesSubprograma.png?raw=true" width= "95%" alt="subprograma">
-</p>
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/code/01_EjercicioOpcionalPT1.cs)
 
-<br>
-<br>
 
-## Diseño descendente
-  - El diseño descendente es una ténica que permite diseñar la solución de un problema con vase en la modularización segmentación, dándole un enfoque de arriba hacia abajo (top down).
-  - Esta solución de divide en módulos que se estructuran e integran jerárquicamente.
-  - Este diseño se vasa en el principio "divide y vencerás".
 
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/DiseñoDescendente.png?raw=true" width= "95%" alt="diseño descendente">
-</p>
+
+
+
+
+
+
+
 
 <br>
 <br>

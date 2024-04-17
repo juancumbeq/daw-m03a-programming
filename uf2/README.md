@@ -192,7 +192,7 @@ namespace daw_m03a_programming
 
 Vamos a realizar una calculadora utilizando varios módulos (suma, resta, etc).
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_EjemploProgramacionModular.cs)
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/code/01_EjemploProgramacionModular.cs)
 
 <br>
 <br>
@@ -247,7 +247,7 @@ Escribir un programa con los siguiente módulos:
   - Subprograma para imprimir el vector resultante.
 
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/02_EjercicioOpcionalPT1.cs)
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/code/02_EjercicioOpcionalPT1.cs)
 
 <br>
 <br>
@@ -256,7 +256,7 @@ Escribir un programa con los siguiente módulos:
   - Calcular el factorial de un número usando un método no recursivo y recursivo.
   - Fórmula para calcular el factorial de un número: (n! = n * (n - 1)!)
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/03_EjemploRecursividad.cs)
+[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/code/03_EjemploRecursividad.cs)
 
 <br>
 <br>
