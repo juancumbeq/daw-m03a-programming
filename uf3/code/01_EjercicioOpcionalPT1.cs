@@ -5,7 +5,7 @@ namespace daw_m03a_programming
 {
     class EjercicioOpcionalPT1
     {
-
+        // Añadir Alumno
         static void anadirAlumno()
         {
             Console.WriteLine("Escribe el nombre del alumno: ");
@@ -19,7 +19,6 @@ namespace daw_m03a_programming
             fe.Close();
             fichero.Close();
         }
-
 
         // Leer Fichero
         static void leerFichero()
@@ -36,7 +35,6 @@ namespace daw_m03a_programming
             fl.Close();
             fichero.Close();
         }
-
 
         // Menu
         static int Menu()
@@ -56,8 +54,6 @@ namespace daw_m03a_programming
                 return 2;
             }
         }
-
-
 
         // Main
         static void Main(string[] args)

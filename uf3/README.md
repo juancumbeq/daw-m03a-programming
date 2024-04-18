@@ -63,88 +63,116 @@
 
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/code/01_EjercicioOpcionalPT1.cs)
 
+<br>
+<br>
+
+## Ficheros de binarios: uso del Buffer - LECTURA
+```
+// Lectura binaria
+
+FileStream fichero = new FileStream("C:/fichero/pelota.jpg", FileMode.Open, FileAccess.Read);
+
+byte[] buffer = new byte[fichero.Length] // un entero de 8 bits sin signo
+fichero.Read(buffer, 0, buffer.Length);
+
+for(int i = 0; i < buffer.Length; i++)
+{
+  Console.WriteLine(buffer[i])
+}
+fichero.Close();
+```
+
+Este código en C# está diseñado para abrir un archivo de imagen (en este caso, "pelota.jpg") ubicado en la ruta **"C:/fichero/"** y luego imprimir el contenido del archivo en la consola en forma de bytes.
+
+Aquí está el desglose del código:
+
+1. Se crea un objeto FileStream llamado fichero que apunta al archivo "pelota.jpg" utilizando la ruta especificada. Se abre en modo de lectura (FileMode.Open) y se establece el acceso para lectura (FileAccess.Read). 
+
+```
+FileStream fichero = new FileStream("C:/fichero/pelota.jpg", FileMode.Open, FileAccess.Read);
+```
+
+2. Se crea un array de bytes llamado buffer que tiene el mismo tamaño que el archivo. Esto asegura que haya suficiente espacio para almacenar todo el contenido del archivo.
+```
+byte[] buffer = new byte[fichero.Length];
+```
+
+3. Se lee el contenido del archivo en el array de bytes utilizando el método Read del objeto FileStream. Los parámetros buffer, 0 y buffer.Length indican que se debe leer desde el principio del array de bytes (buffer), comenzando desde el primer byte (0), y se debe leer hasta el final del array (buffer.Length).
+```
+fichero.Read(buffer, 0, buffer.Length);
+```
+
+4. Se recorre el array de bytes utilizando un bucle for para imprimir cada byte en la consola. Esto imprime el valor numérico de cada byte en una línea separada. 
+```
+for(int i = 0; i < buffer.Length; i++)
+{
+  Console.WriteLine(buffer[i]);
+}
+```
+
+5. Se cierra el objeto FileStream para liberar los recursos del sistema asociados con él.
+```
+fichero.Close();
+```
+
+En resumen, este código lee un archivo de imagen byte por byte y luego imprime el valor numérico de cada byte en la consola. Esto puede ser útil para visualizar cómo está estructurado un archivo binario, como una imagen, en términos de sus bytes individuales.
+
+<br>
+
+#### fichero.Read(buffer, 0, buffer.Length); 
+La línea **fichero.Read(buffer, 0, buffer.Length);** es una llamada al método **Read** del objeto FileStream. Este método se utiliza para leer bytes desde el archivo asociado al FileStream y almacenarlos en un array de bytes, que en este caso es buffer.
+
+Aquí está el desglose de los parámetros utilizados en esta llamada:
+
+  - **buffer**: Este es el array de bytes en el que se almacenarán los datos leídos del archivo.
+  - **0**: Este es el índice en el array buffer donde comenzará a almacenarse la lectura. En este caso, se especifica 0, lo que significa que la lectura comenzará desde el primer byte del array.
+  - **buffer.Length**: Este es el número máximo de bytes que se leerán del archivo. buffer.Length especifica que se leerán tantos bytes como sea posible hasta llenar completamente el array buffer.
+Entonces, la línea fichero.Read(buffer, 0, buffer.Length); básicamente dice: "Lee tantos bytes como sea posible del archivo asociado a fichero y almacénalos en el array buffer, comenzando desde el primer byte del array".
+
+Después de esta línea, el array buffer contendrá los bytes del archivo "pelota.jpg", listos para ser procesados o manipulados según sea necesario.
 
 
+## Ficheros de binarios: uso del Buffer - ESCRITURA
+```
+// Escritura binaria
+FileStream fichero = new FileStream("C:/fichero/pelota.jpg", FileMode.Create, FileAccess.Write);
 
+byte[] buffer = new byte[fichero.Length] // un entero de 8 bits sin signo
+fichero.Write(buffer, 0, buffer.Length);
 
+for(int i = 1000; i < 2000; i++)
+{
+  buffer[i] = 0;
+}
 
+FileStream fichero2 = new FileStream("C:/fichero/pelota.jpg", FileMode.Create, FileAccess.Write);
+fichero2.Write(buffer, 0, buffer.Length);
 
-
-
-
+fichero.Close();
+fichero2.Close();
+```
 
 <br>
 <br>
 
-## Ejemplo de programación modular
-
-Vamos a realizar una calculadora utilizando varios módulos (suma, resta, etc).
-
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/01_EjemploProgramacionModular.cs)
-
-<br>
-<br>
-
-## Paso por valor y paso por referencia
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasosValorReferencia.png?raw=true" width= "100%" alt="pasos de variables">
-</p>
-
-#### Por valor
-Cuando ejecutamos una función que tiene parámetros pasados por vaor, se realiza una copia del parámetro que se ha pasado, es decir, que todas las modificaciones y/o cambios que se realicen se están haciendo en esta copia que se ha creado. El original no se modifica, de manera que no se altera su valor en la función.
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasoPorValor.png?raw=true" width= "85%" alt="paso por valor">
-</p>
-
-<br>
-
-#### Paso por referencia
-Sin embargo, cuando ejecutamos una función que tiene parámetros pasados por referencia, todas aquellas modificaciones que se realicen en la función van a afectar a sus parámetros, ya que se trabaja con los originales.
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/PasoPorReferencia.png?raw=true" width= "100%" alt="paso por referencia">
-</p>
-
-<br>
-<br>
-
-## Diferencias entre Arrays y Variables
-La página web de Microsoft dice que el paso de vectores por valor se hace mediante la palabra **params**, pero eso no impide que se pueda modificar su valor. Por lo tanto, el hecho de llamar a una función con la palabra **params** o sin ella, es funcionalmente idéntico.
-
-En cuanto a las variable individuales:
-  - El paso por valor no necesita ningún tipo de palabra clave.
-  - El paso por referencia necesita de una palabra clave, que puede ser:
-    - **ref** (como hemos visto) o también **out** (da igual, funciona igual) con la intención de modificar el valor de la variable original.
-    - **in** para pasar la variable por referencia, pero protegida en modo solo lectura (si se intenta modificar, el compilador arrojará un error).
-
-Ejemplos:
-
-<p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/EjemplosValorReferencia.png?raw=true" width= "95%" alt="ejemplos">
-</p>
-
-<br>
-<br>
-
-## Ejercicio opcional PT.1
-Escribir un programa con los siguiente módulos:
-
-  - Subprograma para generar números aleatorios entre 0 y 50 ambos inclusive y guardarlos en un vector de tamaño 10 creado en el MAIN.
-  - Subprograma para imprimir el vector resultante.
+## Manejo de ficheros
+  - Todo lo que llevamos visto hasta aquí ha sido mediante variables, estructuras de datos, y hemos manipulado la información de la que disponíamos.
+  - Esta información, una vez que finaliza la ejecución del software, desaparece de memoria, ya que ha estado 
 
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/02_EjercicioOpcionalPT1.cs)
 
-<br>
-<br>
 
-## Ejemplo de recursividad
-  - Calcular el factorial de un número usando un método no recursivo y recursivo.
-  - Fórmula para calcular el factorial de un número: (n! = n * (n - 1)!)
 
-[ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf1/code/03_EjemploRecursividad.cs)
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>
