@@ -48,7 +48,7 @@
   - Ejemplo de Búfer: ```byte[] fileContents = File.ReadAllBytes("filepath.txt")```. Lee todos los bytes de un archivo en la memoria. Esto es útil para cuando necesita manipular todo el archivo a la vez, o mantener una "copia local" para que su programa la guarde para que el archivo pueda estar libre para otros usos. Sin embargo, dependiendo del tamaño de la fuente y la cantidad de memoria disponible, un búfer que contiene el archivo completo podría no ser una opción.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf2/images/FileStream.png?raw=true" width= "99%" alt="filestream">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/FileStream.png?raw=true" width= "99%" alt="filestream">
 </p>
 
 <br>
@@ -157,12 +157,32 @@ fichero2.Close();
 
 ## Manejo de ficheros
   - Todo lo que llevamos visto hasta aquí ha sido mediante variables, estructuras de datos, y hemos manipulado la información de la que disponíamos.
-  - Esta información, una vez que finaliza la ejecución del software, desaparece de memoria, ya que ha estado 
+  - Esta información, una vez que finaliza la ejecución del software, desaparece de memoria, ya que ha estado almacenada en el memoria principal el tiempo que dura la ejecución del software.
+  - Podemos ver los ficheros como una parte de un dispositivo no volátil a la que se le asigna un nombrem y que puede contener una cantidad de datos.
+  - Los ficheros o archivos son una secuencia de bits (0 y 1) 1 Byte = 8 bits que se almacenan en un dispositivo de almacenamiento secundario, por lo que la información va a permanecer a pesar de que se cierre la aplicación que los utilice.
+  - Se utiliza la librería System.IO que contien tipos que permiten leer y escribir en los archivos.
+  ```
+  using System;
+  using System.IO;
+  ```
 
+Esto da más independencia sobre la información, ya que no necesitamos que el programa se esté ejecutando para que la información que contiene exista.
 
+A la hora de trabajar con ficheros debemos tener en cuenta:
 
+  - La información es un conjunto de 0 y 1.
+  - Al agrupar los bits se forman bytes.
+  - Al agrupar los campos se crean los registros de información.
+  - Un fichero es creado por un conjunto de registros de manera quetodos tienen en común la misma estructura.
+  - Los directorios tienen la función de agrupar distintos ficheros siguiendo unas condiciones determinadas por el sistema operativo o por el programador.
 
+<br>
 
+#### Acceso a ficheros
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/AccesoFicheros.png?raw=true" width= "99%" alt="filestream">
+</p>
 
 
 
