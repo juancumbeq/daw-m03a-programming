@@ -16,6 +16,7 @@
   - [Paso por valor o paso por referencia](#paso-por-valor-y-paso-por-referencia)
   - [Diferencias entre Arrays y Variables](#diferencias-entre-arrays-y-variables)
   - [Ejercicio opcional PT.1](#ejercicio-opcional-pt1)
+  - [Recursividad](#recursividad)
   - [Ejemplo de recursividad](#ejemplo-de-recursividad)
 
 <br>
@@ -251,6 +252,29 @@ Escribir un programa con los siguiente módulos:
 
 <br>
 <br>
+
+## Recursividad
+
+Recusión es un concepto que consiste en que un método se llama a sí mismo.
+
+  - Un método recursivo necesita ser terminado mediante una condición de parada.
+
+  - Por tanto, tenemos que implementar una condición de tal forma que, comprobemos que esta condición terminará de forma satisfactoria.
+
+  - Si no hacemos eso, un método recursivo terminará llamándose a sí mismo interminablemente y provocará un desbordamiento en la memoria. "Stack Overflow".
+
+  - Un método recursivo se compone de un CASO GENERAL que es la situación en la que se "llama a sí mismo", y un caso BASE cuando se cumple la condición de parada y permite la finalización del programa.
+
+  - ¿Para qué sirve? Para resolver problemas y situaciones que surgen en programación de una forma elegante y eficiente.
+
+    - Usos más frecuentes:
+      - Recorrido de elementos
+      - Simplificación de código
+
+    - Precauciones:
+      - Desbordamiento
+      - Consumo excesivo de recursos
+      - Establecer siempre una condición de parada (break) 
 
 ## Ejemplo de recursividad
   - Calcular el factorial de un número usando un método no recursivo y recursivo.

@@ -12,7 +12,22 @@
 <br>
 <br>
 
-## Librerías: System.io - Clases
+## Librerías
+
+Una librería es un conjunto de métodos relacionados con el mismo objetivo para poder ser reutilizado cada vez que el programador lo desee. Están basadas en clases.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/UsingSystem.png?raw=true" width= "99%" alt="filestream">
+</p>
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/ClaseMath.png?raw=true" width= "99%" alt="filestream">
+</p>
+
+<br>
+<br>
+
+## Librería System.io - Clases
 
   - **File**: Proporciona métodos estáticos para crear, copiar, eliminar, mover, abrir un solo archivo. **Contribuye a la creación de objetos FileStream.** Métodos estáticos se refiere a que símplemente con llamar a la clase podemos ejecutar el método, sin necesidad de instanciar ningún objeto.
 
@@ -32,18 +47,19 @@
 ## FileStream
 
   - La clase FileStream proporciona un Stream (flujo) para un archivo, lo que permite operaciones de lectura y escritura.
+
   - El modo en el que vamos a abrir el fichero (FileMode)
     - **Open**: Abre un fichero existente. Si el fichero no existe, lanzará un error.
     - **Append**: Abre un fichero para añadir datos al final del mismo si existe, o crea un fichero nuevo si no existe.
     - **Create**: Crea un nuevo fichero. Si el fichero existe será sobrescrito.
     - **Delete**: Borra un fichero (no se especifica FileAccess).
+
   - El modo en el que accedemos al fichero (FileAccess):
     - **Read**: Acceso para leer el archivo.
     - **Write**: Acceso de escritura al archivo.
     - **ReadWrite**: acceso de lectura y escritura al archivo.
+
   - Ejemplo: ```FileStream ficheroOrigen = new FileStream("fondo.jpg", FileMode.Open, FileAccess.Read);```
-
-
 
 <br>
 <br>
@@ -62,10 +78,15 @@
 <br>
 
 ## Ejercicio opcional PT.1
-  - Importar la librería System.IO
+
+  - Importar la librería System.IO.
+
   - Crear método 1: preguntar al usuario si quiere añadir algún alumno al fichero alumnos.txt o leer el fichero.
+
   - Crear método 2: si el usuario decide leer el fichero, muestra el contenido de alumnos.txt.
+
   - Crear método 3: si el usuario decide añadir algún alumno, preguntar su nombre y añadirlo a alumnos.txt.
+
   - En el método MAIN(): ejecutar los método anteriores.
 
 [ver archivo](https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/code/01_EjercicioOpcionalPT1.cs)
@@ -132,8 +153,11 @@ La línea **fichero.Read(buffer, 0, buffer.Length);** es una llamada al método 
 Aquí está el desglose de los parámetros utilizados en esta llamada:
 
   - **buffer**: Este es el array de bytes en el que se almacenarán los datos leídos del archivo.
+
   - **0**: Este es el índice en el array buffer donde comenzará a almacenarse la lectura. En este caso, se especifica 0, lo que significa que la lectura comenzará desde el primer byte del array.
+
   - **buffer.Length**: Este es el número máximo de bytes que se leerán del archivo. buffer.Length especifica que se leerán tantos bytes como sea posible hasta llenar completamente el array buffer.
+
 Entonces, la línea fichero.Read(buffer, 0, buffer.Length); básicamente dice: "Lee tantos bytes como sea posible del archivo asociado a fichero y almacénalos en el array buffer, comenzando desde el primer byte del array".
 
 Después de esta línea, el array buffer contendrá los bytes del archivo "pelota.jpg", listos para ser procesados o manipulados según sea necesario.
@@ -164,9 +188,13 @@ fichero2.Close();
 
 ## Manejo de ficheros
   - Todo lo que llevamos visto hasta aquí ha sido mediante variables, estructuras de datos, y hemos manipulado la información de la que disponíamos.
+  
   - Esta información, una vez que finaliza la ejecución del software, desaparece de memoria, ya que ha estado almacenada en el memoria principal el tiempo que dura la ejecución del software.
+  
   - Podemos ver los ficheros como una parte de un dispositivo no volátil a la que se le asigna un nombrem y que puede contener una cantidad de datos.
+  
   - Los ficheros o archivos son una secuencia de bits (0 y 1) 1 Byte = 8 bits que se almacenan en un dispositivo de almacenamiento secundario, por lo que la información va a permanecer a pesar de que se cierre la aplicación que los utilice.
+  
   - Se utiliza la librería System.IO que contien tipos que permiten leer y escribir en los archivos.
   ```
   using System;

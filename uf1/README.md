@@ -13,6 +13,7 @@
   - [Variables textuales](#variables-textuales)
   - [Variables booleanas](#variables-booleanas)
   - [Conversión de variables en C#](#conversión-de-variables-en-c)
+  - [Tipos de estructuras](#tipos-de-estructuras)
   - [Intrucciones de control condicional: IF / SWITCH](#instrucciones-de-control-condicional-ifswitch)
   - [Intrucciones de control iterativas: WHILE / FOR](#instrucciones-de-control-iterativas-whilefor)
   - [Diagrama de flujo](#diagrama-de-flujo)
@@ -66,16 +67,42 @@ class Program
 }
 ```
 
+#### Constantes y literales
+
+  - Constantes: son igual que las variables, salvo porque después de ser inicializadas, su valor es inalterable. El valor de una constante NO puede cambiar. Es necesario declararlas e inicializarlas en la misma instrucción.
+  ```
+  const int speedOfLight = 30000000;
+  const double Pi = 3.1416;
+  ```
+
+  - Literales: valores explícitos con los que trabajar en el programa. No se guardan en ningún espacio de memoria, simplemente son valores normales que se utilizan para asignaciones o comparaciones.
+  ```
+  edad > 18
+  inicial != 'F'
+  ```
+
+<br>
+
 #### Declaración:
+
+Instrucción que sirve para crear una variable. Esta instrucción le indica al ordenador que debe resevar un espacio determinado en memoria que va a albergar un dato de un tipo y un tamaño concreto. Para poder identificarlo se aporta un nombre para el dato. 
 ```
 int i;
 string cadena;
 double num;
 ```
+Es habitual declarar e inicializar una variable en una misma instrucción.
+```
+int i = 0;
+string cadena = "Hola";
+double num = 8/3;
+```
 
 <br>
 
-#### Asignación:
+#### Inialización:
+
+Primera instrucción que asigna un valor a la variable. Antes de asignar una primer valor a una variable, ese dato carece de significado y no es posible operar con él (error). La primera asignación de valor a una variable se llama inicialización.
 ```
 i = 0;
 cadena = "Hola";
@@ -84,11 +111,13 @@ num = 8/3;
 
 <br>
 
-#### Declaración y asignación:
+#### Asignación:
+
+Posteriores asignaciones de valores para una variable. Pueden ocurrir a lo largo del programa, siemore que se necesite actualizar el valor del dato (el nuevo dato sobrescribe al antiguo). El dato que se actualiza siempre tendrá el mismo nombre y siempre ocupará el mismo espacio de memoria que reservamos al declarar.
 ```
-int i = 0;
-string cadena = "Hola";
-double num = 8/3;
+i = 0;
+cadena = "Hola";
+num = 8/3;
 ```
 
 <br>
@@ -233,6 +262,20 @@ False - False = False
 
 ## Conversión de variables en C#
 
+Métodos disponibles:
+
+  - Parse: permite convertir una cadena de caracteres en una tipo numérico.
+
+  - Convert.ToChar: convierte un valor especificado en un carácter.
+
+  - Convert.ToString: convierte un valor especificado en su representación como cadena de caracteres.
+
+  - Convert.ToDouble: convierte un valor especificado en un número con decimales de tipo double.
+
+  - Convert.ToInt32: convierte un valor especificado en un número entero de 32 bits (int). Se trunca si es necesario.
+
+  - Convert.ToInt64: convierte un valor especificado en un número entero de 64 bits (long). Se trunca si es necesario.
+
  No se pueden realizar operaciones aritméticas con caracteres ni con cadenas de caracteres.
 
 ```
@@ -283,7 +326,7 @@ namespace daw_m03a_programming
 <br>
 
 ##### Conversiones implícitas
-
+Se producen cuando el valor que se va a almacenar no necesita ser truncado ni redondeado. Son automáticas.
 ```
 long b = a;
 Console.WriteLine(b);
@@ -292,6 +335,7 @@ Console.WriteLine(b);
 <br>
 
 ##### Conversiones explícitas
+Implican una posible pérdida de datos por aplicación de un redondeo o truncado. Son manuales.
 ```
 float b = 8/3;
 Console.WriteLine((int)b);
@@ -301,6 +345,17 @@ int.Parse("100");
 
 <br>
 <br>
+
+## Tipos de estructuras
+
+  - Secuenciales: son instrucciones que se ejecutan de manera secuencial, es decir, una detrás de otra, sin realizar ninguna alteración en el orden ni ningún tipo de comprobación lógica.
+
+  - Comparativas: consiste en bloques de instrucciones a ejecutar dependiendo de una expresión lógica, una comparación o un valor. Dependiendo de si esa operación lógica es verdadera o falsa, el programa ejecutará un bloque de instrucciones y otro.
+
+  - Iterativas o repetitivas: consisten en un bloque de instrucciones que se repetirá dependiendo de una expresión lógica o una comparación. Cuando se dé la condición señalada, el programa continuará su ejecución secuencial saliendo de este bloque.
+
+  - De salto o de control: son llamadas a funciones, es decir, saltos a bloques de instrucciones que pueden suceder en cualquier punto de un programa y que, al terminar su ejecución, vuelven al punto del programa donde se realizó la llamada para continuar el flujo normal.
+
 
 ## Instrucciones de control condicional: IF/SWITCH.
 
