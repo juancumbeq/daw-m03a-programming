@@ -1,7 +1,7 @@
 # UF3: FUNDAMENTOS DE GESTIÓN DE FICHEROS
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Proyecto%20-Finalizado-brightgreen"/>
+  <img src="https://img.shields.io/badge/Curso%20-Finalizado-brightgreen"/>
 </p>
 
 <br>
@@ -15,9 +15,16 @@
 ## Librerías: System.io - Clases
 
   - **File**: Proporciona métodos estáticos para crear, copiar, eliminar, mover, abrir un solo archivo. **Contribuye a la creación de objetos FileStream.** Métodos estáticos se refiere a que símplemente con llamar a la clase podemos ejecutar el método, sin necesidad de instanciar ningún objeto.
-  - **FileStream**: Proporciona un stream para un archivo, lo que **permite operaciones de lectura y escritura síncrona y asíncrona.**
+
+  - **FileStream**: Proporciona un stream para un archivo, lo que **permite operaciones de lectura y escritura síncrona (la ejecución se centra en la operación de lectura/escritura y bloquea las demás) y asíncrona (se puede realizar la operación de lectura/escritura en segundo plano y ejecutar otras tareas a la vez).**
+  
   - **StreamReader**: Es una clase que el programa va a usar para guardar la información de un **fichero que se abre por extracción de datos** (Lectura, Read). Lectura de datos en archivo secuencial (habrá un error si el archivo no existe).
+
   - **StreamWriter**: Es una clase que el programa va a usar para guardar la información de un **fichero que se abre para escritura** (Write, escribir).
+
+  - BinaryReader: Lee en formato finario sobre los archivos indicados.
+
+  - BinaryWriter: Escribe en formato binario sobre los archivos indicados.
 
 <br>
 <br>
@@ -181,24 +188,21 @@ A la hora de trabajar con ficheros debemos tener en cuenta:
 #### Acceso a ficheros
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/AccesoFicheros.png?raw=true" width= "99%" alt="filestream">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/AccesoFicheros.png?raw=true" width= "99%" alt="acceso a ficheros">
 </p>
 
-
-
-
-
-
-
-
-
-
-
-<br>
 <br>
 
-## UF3: FUNDAMENTOS DE GESTIÓN DE FICHEROS
-Acceder a la siguiente UF: [enlace](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf3)
+#### Rutas de acceso
+
+Dependendiendo de cómo empecemos la ruta de directorio para nombrar el archivo, podemos tener dos tipos de rutas bien diferenciadas.
+   - Ruta absoluta o completa: se le indica el camino de directorio desde el comienzo. Si es en el sistema operativo Linux (UNIX), empezará por la raíz (/), en caso contrario, si el sistema operativo es Windows debe empezar por el nombre de la unidad en cuestión (\).
+
+   - Ruta relativa: se le indica el camino de directorio desde la posición actual. No se incluye el directorio raíz.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03a-programming/blob/main/uf3/images/RutasFicheros.png?raw=true" width= "99%" alt="acceso a ficheros">
+</p>
 
 <br>
 <br>
