@@ -7,7 +7,14 @@
 <br>
 
 ## Index
-  - [Clases y objetos](#clases-y-objetos)
+  - [Librerías](#librerías)
+  - [Librerías System.io - Clases](#librería-systemio---clases)
+  - [FileStream](#filestream)
+  - [Stream VS Buffer](#stream-vs-buffer)
+  - [Ejercicio opcional PT.1](#ejercicio-opcional-pt1)
+  - [Ficheros binarios - Lectura](#ficheros-binarios-uso-del-buffer---lectura)
+  - [Ficheros binarios - Escritura](#ficheros-binarios-uso-del-buffer---escritura)
+  - [Manejo de ficheros](#manejo-de-ficheros)
 
 <br>
 <br>
@@ -94,7 +101,7 @@ Una librería es un conjunto de métodos relacionados con el mismo objetivo para
 <br>
 <br>
 
-## Ficheros de binarios: uso del Buffer - LECTURA
+## Ficheros binarios: uso del Buffer - LECTURA
 ```
 // Lectura binaria
 
@@ -162,8 +169,10 @@ Entonces, la línea fichero.Read(buffer, 0, buffer.Length); básicamente dice: "
 
 Después de esta línea, el array buffer contendrá los bytes del archivo "pelota.jpg", listos para ser procesados o manipulados según sea necesario.
 
+<br>
+<br>
 
-## Ficheros de binarios: uso del Buffer - ESCRITURA
+## Ficheros binarios: uso del Buffer - ESCRITURA
 ```
 // Escritura binaria
 FileStream fichero = new FileStream("C:/fichero/pelota.jpg", FileMode.Create, FileAccess.Write);
