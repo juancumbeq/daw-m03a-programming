@@ -25,7 +25,13 @@ Veremos los dos tipos de programación: estructurada y modular, analizando las l
 # Index
 
   - [UF1: Programación estructurada](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf1)
+    - Reconocer la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.
+    - Utilizar correctamente tipos de datos simples y compuestos utilizando las estructuras de control adecuadas.
+
   - [UF2: Diseño modular](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf2)
+    - Escribir y probar programas sencillos reconociendo y aplicando los fundamentos de la programación modular.
+
   - [UF3: Fundamentos de gestión de ficheros](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf3)
+    - Diseña, prueba y documenta programas que realizan diferentes operaciones sobre ficheros, documentando el programa y las pruebas realizadas.
 
 <br>
