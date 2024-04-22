@@ -25,7 +25,7 @@ Veremos los dos tipos de programación: estructurada y modular, analizando las l
 # Index
 
   - [UF1: Programación estructurada](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf1)
-  - [UF2: Diseño modular](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf1)
+  - [UF2: Diseño modular](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf2)
   - [UF3: Fundamentos de gestión de ficheros](https://github.com/juancumbeq/daw-m03a-programming/tree/main/uf3)
 
 <br>
